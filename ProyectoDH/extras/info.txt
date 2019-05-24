@@ -1,0 +1,14 @@
+seccion inicio - hablar de nuestra plataforma digital
+FAQ
+Registrarse
+Loguearse
+Perfil
+
+Administrador
+Listado de preguntas
+Ranking de usuarios y jugadores
+
+Ejemplo animaciones y preguntas: https://demonisblack.com/code/quizgame/game/
+bootstraap
+
+https://vectorcharacters.net
