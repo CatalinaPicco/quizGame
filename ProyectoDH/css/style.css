@@ -11,5 +11,91 @@ body {
   height: auto;
   font-family: 'Lato', sans-serif;
   margin: 0;
-  background-color: #eeeeee;
+  background-color: #F1F1F1;
+
+}
+
+ul, ol {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Container */
+.container {
+  max-width: 540px;
+  margin:0 auto;
+}
+
+/* Header */
+header {
+	width: 100%;
+	margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.main-nav{
+  margin-top: 20px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.main-nav .nav-profile{
+  position: absolute;
+  top: 20px;
+  left: 15px;
+}
+
+.main-nav .nav-access{
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+
+.material-icons{
+  vertical-align: middle;
+  padding: 4px 3px;
+  color: black;
+}
+
+.nav-profile{
+  width: 75px;
+  background-color: #E2E2E2;
+  border-radius: 20px;
+  }
+
+.nav-profile a{
+  color: black;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.nav-access ul{
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.nav-access li{
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 75px;
+  border-radius: 20px;
+  background-color: #E2E2E2;
+  vertical-align: middle;
+}
+
+.nav-access a{
+  color: black;
+  font-weight: bold;
+  padding: 7px 20px;
 }
