@@ -2,7 +2,7 @@
 $navLinks = [
   "Perfil"=> "perfil.php"];
 $navAccess=[
-  "Faq" => "faq.php",
+  "FAQ's" => "faq.php",
   "Login" => "login.php",
   "Registrarse" => "register.php",
 ];
