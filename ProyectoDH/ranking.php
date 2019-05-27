@@ -114,6 +114,10 @@ h1 {
       <div class="container">
         <header> <!-- Encabezadp -->
           <nav class="main-nav">
+            <a href="#" class="toggle-nav">
+              <span class="toggle-nav"><i class="material-icons">menu</i></span>
+            </a>
+            <span class="nav-profile-ico"><i class="material-icons">account_circle</i><a href="<?php echo $linkUrl ?>"></span>
             <ul class="nav-profile">
               <?php foreach ($navLinks as $linkTxt => $linkUrl) : ?>
                 <li><i class="material-icons">account_circle</i><a href="<?php echo $linkUrl ?>">   <?php echo $linkTxt; ?> </a></li>
