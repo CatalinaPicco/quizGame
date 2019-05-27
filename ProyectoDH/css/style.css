@@ -239,3 +239,36 @@ h1{
   }
 
 }
+
+.containerFAQ{
+  display: block;
+}
+
+.containerPreguntas{
+  background-color: #6A6FF7;
+  border: solid 5px #CDE9FF;
+  border-radius: 25px;
+  width: 90vw;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+}
+
+.containerPreguntas h1,
+.containerPreguntas li{
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.buscador{
+  position: relative;
+  top: 15px;
+  left: 2%;
+  width: 70%;
+}
+
+.buscadorEnviar{
+  position: relative;
+  top: 15px;
+  width: 26%;
+}
