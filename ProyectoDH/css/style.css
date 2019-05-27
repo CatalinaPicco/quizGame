@@ -26,6 +26,7 @@ li {
 
 a{
   text-decoration: none;
+
 }
 
 /* Container */
@@ -38,7 +39,7 @@ a{
 header {
 	width: 100%;
 	margin-bottom: 20px;
-  font-size: 12px;
+  font-size: 1em;
 }
 
 .main-nav{
@@ -46,59 +47,123 @@ header {
   display: inline-flex;
   flex-wrap: wrap;
   width: 100%;
+  }
+
+.main-nav .nav-profile-ico{
+  position: absolute;
+  top: 25px;
+  left: 25px;
 }
 
-.main-nav .nav-profile{
+.main-nav .toggle-nav{
   position: absolute;
-  top: 20px;
-  left: 15px;
-}
-
-.main-nav .nav-access{
-  position: absolute;
-  top: 20px;
+  top: 10px;
   right: 15px;
 }
 
-.material-icons{
+.nav-profile-ico a{
   vertical-align: middle;
   padding: 4px 3px;
   color: black;
+
 }
 
-.nav-profile{
-  width: 75px;
-  background-color: #E2E2E2;
-  border-radius: 20px;
-  }
-
-.nav-profile a{
+.material-icons{
   color: black;
-  font-weight: bold;
-  vertical-align: middle;
+  font-size: 2em;
 }
 
-.nav-access ul{
-  display: inline-flex;
-  justify-content: flex-end;
+.nav-profile {
+  display: none;
+}
+
+ul .nav-profile {
+  display: none;
 }
 
 .nav-access li{
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 75px;
-  border-radius: 20px;
-  background-color: #E2E2E2;
-  vertical-align: middle;
+  display: none;
 }
 
-.nav-access a{
+.toggle-nav{
+  transform: scale(1.2);
   color: black;
-  font-weight: bold;
-  padding: 7px 20px;
 }
+
+.container-section{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  color: #707070;
+  font-weight: bold;
+  font-size: 2em;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.sub-ppal{
+  color: #B3B3B3;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.sub-ppal a{
+  color: #8F93F5;
+}
+
+.button-play{
+  background-color: #8F93F5;
+  width: 100px;
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 20px 0;
+  }
+
+.button-play a{
+  color: white;
+  vertical-align: middle;
+  padding-bottom: 5px;
+}
+
+.container-about {
+  background-color: #6A6FF7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+}
+
+.h2-about{
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.carrousel-tablet-desktop{
+  display: none
+}
+
+.carrousel-movil{
+  display: block;
+  width: 100vw;
+  height: 60vh;
+}
+
+
 
 .containerFAQ{
   display: block;
@@ -131,4 +196,77 @@ header {
   position: relative;
   top: 15px;
   width: 26%;
+}
+
+
+
+@media (min-width:640px) {
+
+
+  .main-nav .nav-profile{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+  }
+
+  .main-nav .nav-access{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+  }
+
+  .nav-profile{
+    display: inline-flex;
+    width:120px;
+    background-color: #E2E2E2;
+    border-radius: 20px;
+    }
+
+  .nav-profile a{
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+
+  .material-icons{
+    vertical-align: middle;
+    padding: 4px 3px;
+    color: black;
+  }
+
+  .toggle-nav{
+      display: none;
+    }
+
+  .nav-access ul{
+    display: inline-flex;
+    justify-content: flex-end;
+  }
+
+  .nav-access li{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 120px;
+    border-radius: 20px;
+    background-color: #E2E2E2;
+    vertical-align: middle;
+  }
+
+  .nav-access a{
+    color: black;
+    font-weight: bold;
+    padding: 7px 20px;
+  }
+
+  .carrousel-movil{
+    display: none
+  }
+
+  .carrousel-tablet-desktop{
+    display: block;
+    width: 60vw;
+  }
+
 }
