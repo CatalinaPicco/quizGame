@@ -10,11 +10,13 @@ require_once ("header.php");
 <style media="screen">
 .blank-wrapper {
   background-color: white;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 20px !important;
+  margin: 0;
   height: auto;
-  width: 900px;
-  margin: 100px auto;
-  border-radius: 40px;
-  padding: 40px !important;
+  margin-top: 30px;
+  margin-bottom: 100px !important;
 }
 h1 {
   text-align: center;
@@ -23,8 +25,8 @@ h1 {
   max-width: 1140px;
 }
 .respuestaGrupo {
-  display: inline-block !important;
   text-align: center !important;
+  padding: 0;
 }
 .respuestaGrupo label {
   display: block !important;
@@ -37,7 +39,6 @@ h1 {
 }
 .titulo-seccion {
   color: #707070;
-  margin: 50px auto;
 }
 .agregar {
   background: #8F93F5;
@@ -56,7 +57,6 @@ h1 {
   background: none;
   height: 35px;
   font-size: 18px;
-  width: 500px;
 }
 .input-search:hover, .input-search:focus {
   background: none;
@@ -69,6 +69,25 @@ h1 {
 .celeste {
   background-color: #CDE9FF;
   font-weight: bold;
+}
+
+@media (min-width:768px) {
+  .blank-wrapper {
+    width: 900px;
+    margin: 100px auto;
+    border-radius: 40px;
+    padding: 40px !important;
+  }
+  .titulo-seccion {
+    margin: 50px auto;
+  }
+  .input-search {
+    width: 500px;
+  }
+  .respuestaGrupo {
+    display: inline-block !important;
+    padding: 20px;
+  }
 }
 </style>
 
@@ -95,7 +114,7 @@ h1 {
     <div class="row justify-content-md-center">
       <section class="blank-wrapper col-xl-12 shadow-lg p-3 mb-5 bg-white">
         <h1 class="titulo-seccion">Preguntas</h1>
-        <div class="col-md-12 row justify-content-md-center search-row">
+        <div class="col-md-12 row justify-content-center search-row">
           <form>
             <div class="card card-sm search row">
               <div class="col-lg-12 card-body row no-gutters align-items-center search-container">
