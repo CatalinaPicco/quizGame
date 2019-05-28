@@ -8,6 +8,9 @@ require_once ("header.php");
   <?php require_once ("head.php"); ?>
 
   <body>
+    <div class="container-login">
+
+
     <header> <!-- Encabezadp -->
       <nav class="main-nav">
         <a href="#" class="toggle-nav">
@@ -27,7 +30,40 @@ require_once ("header.php");
       </nav>
     </header>
 
+    <div class="login">
+    <form class="ingreso" action="index.html" method="post">
+      <p>
+      <label for="nombre">
+      </label>
+      <input id="nombre" type="text" name="nombre" value="" placeholder="Nombre">
+      </p>
+      <p>
+        <label for="pass">
+        </label>
+        <input id="pass" type="password" name="pass" value="" placeholder="Password">
+      </p>
+      <p>
+        <label for="email">
+        </label>
+        <input id="email" type="email" name="email" value="" placeholder="E-mail">
+      </p>
+      <p>
+        <label for="mensaje"></label>
+        <textarea name="mensaje" rows="8" cols="80" placeholder="Your message:"></textarea>
+      </p>
+      
+      <p>
+        <button type="button" name="button">Enviar</button>
+      </p>
+    </form>
+    </div>
 
+<h1 class= "tituloJuego">Quiz Game</h1>
+<h2 class= "subitituloJuego">Reinforcement Tool for Corporate Training</h2>
+
+
+
+  </div>
   <?php require_once ("scripts.php"); ?>
   </body>
 </html>

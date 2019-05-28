@@ -8,7 +8,8 @@ require_once ("header.php");
   <?php require_once ("head.php"); ?>
 
   <body>
-    <header> <!-- Encabezadp -->
+<div class="container">
+  <header> <!-- Encabezadp -->
       <nav class="main-nav">
         <a href="#" class="toggle-nav">
           <span class="toggle-nav"><i class="material-icons">menu</i></span>
@@ -27,6 +28,14 @@ require_once ("header.php");
       </nav>
     </header>
 
+
+
+<section>
+  <div class="button-play">
+    <a href="#">Jugar</a>
+  </div>
+</section>
+</div>
 
   <?php require_once ("scripts.php"); ?>
   </body>
