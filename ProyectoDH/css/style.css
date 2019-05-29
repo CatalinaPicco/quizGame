@@ -530,8 +530,8 @@ body{
   }
 
   .carrousel-tablet-desktop{
-    display: block;
-    width: 60vw;
+    display: flex;
+    width: 50vw;
     }
 
     .image-t-desktop img{
