@@ -6,7 +6,7 @@ $titulo = "About";
 <?php require_once ("head.php"); ?>
 
   <body>
-    <div class="container"> <!-- Contenedor ppal -->
+    <div class="container-ppal"> <!-- Contenedor ppal -->
 
 <?php require_once ("header.php");?>
 

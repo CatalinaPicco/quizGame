@@ -12,6 +12,8 @@ body {
   height: auto;
   margin: 0;
   width: 100%;
+  background-image: url(../img/fondo-mobile.png);
+  background-repeat: repeat;
 }
 
 ul, ol {
@@ -29,9 +31,9 @@ a{
 }
 
 /* Container */
-.container {
+.container-ppal {
   max-width: 540px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 /* Header */
@@ -98,7 +100,7 @@ ul .nav-profile {
   height: 100vh;
 }
 
-h1{
+.h1-index{
   font-size: 2em;
   font-weight: bold;
   color: #707070;
@@ -117,13 +119,12 @@ h1{
 }
 
 .image-mobile{
-  width: 100%;
-  margin: 0;
+  display: flex;
 }
 
 .image-mobile img{
-  width: 100%;
-  margin: 0 10px;
+  width: 90%;
+  margin: auto;
 }
 
 .image-t-desktop{
@@ -376,6 +377,16 @@ h5.bootstrap {
 
 @media (min-width:640px) {
 
+body{
+  background-image: url(../img/fondo.png);
+  background-repeat: repeat;
+}
+
+  .container-ppal {
+    max-width: 800px;
+    margin:0 auto;
+}
+
   .container-section{
     justify-content:center;
   }
@@ -438,30 +449,39 @@ h5.bootstrap {
     padding: 7px 20px;
   }
 
-  h1{
-    margin:0 0 5% 0;
+  .h1-index{
+    margin:0 0 1% 0;
   }
 
   .sub-ppal{
-    margin-bottom: 5%;
+    margin-bottom: 1%;
   }
 
   .button-play{
+<<<<<<< HEAD
     margin-top: 5%;
   }
+=======
+    margin-top: 1%;
+    }
+>>>>>>> c4b37f94aebcbf4611449679ac9f5a079afb3687
 
-  .image-mobile{
-    display: block;
-  }
+    .image-t-desktop{
+      display: flex;
+      margin: 0 auto;
+      width: 100%;
+      align-items: center;
+     }
 
-  .image-t-desktop{
-    display: none;
-  }
+    .image-t-desktop img{
+      width: 90vw;
+      margin: 0 auto;
+    }
 
-  .image-t-desktop img{
-    margin: 0 100px;
-    width: 100%;
-  }
+      .image-mobile{
+      display:none;
+      }
+
 
   .container-about {
     margin-top: 0;
@@ -472,10 +492,10 @@ h5.bootstrap {
   }
 
   .carrousel-tablet-desktop{
-    display: block;
+    display: flex;
     width: 90vw;
   }
-}
+
 /* FAQ's*/
 .containerPreguntas{
   background-color: #6A6FF7;
@@ -498,15 +518,33 @@ h5.bootstrap {
 
 }
 
-@media (min-width:1024px) {
+@media (min-width:1025px) {
+
+  .container-ppal {
+    max-width: 1200px;
+    margin:0 auto;
+}
 
   .container-section{
     justify-content:center;
   }
 
   .carrousel-tablet-desktop{
+<<<<<<< HEAD
     display: block;
     width: 60vw;
+=======
+    display: flex;
+    width: 50vw;
+    }
+
+    .image-t-desktop img{
+      width: 50vw;
+    }
+
+
+
+>>>>>>> c4b37f94aebcbf4611449679ac9f5a079afb3687
   }
 
 }
