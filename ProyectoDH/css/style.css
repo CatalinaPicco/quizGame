@@ -227,6 +227,132 @@ h1{
   display:flex;
 }
 
+/* Inicio Ranking Mobile*/
+
+.bootstrap .blank-wrapper {
+  background-color: white;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 20px !important;
+  margin: 0;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 100px !important;
+}
+
+.bootstrap h1 {
+  text-align: center;
+}
+
+div.container.bootstrap {
+  max-width: 1140px;
+}
+.bootstrap .respuestaGrupo {
+  display: inline-block !important;
+  text-align: center !important;
+}
+.bootstrap .respuestaGrupo label {
+  display: block !important;
+}
+.bootstrap .search {
+  background: lightgray;
+  border-radius: 20px;
+  border: none;
+  height: 35px;
+}
+.bootstrap .titulo-seccion {
+  color: #707070;
+}
+.bootstrap .agregar {
+  background: #8F93F5;
+  color: white;
+  font-weight: bold;
+  height: 35px;
+  width: 35px;
+}
+.bootstrap .search-container {
+  padding: 0;
+  margin: 0;
+  height: 35px;
+}
+.bootstrap .input-search {
+  border: none;
+  background: none;
+  height: 35px;
+  font-size: 18px;
+  width: 500px;
+}
+.bootstrap .input-search:hover, .input-search:focus {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.bootstrap .search-row {
+  padding-bottom: 50px;
+}
+.bootstrap .rating {
+  float:left;
+}
+.bootstrap .rating {
+  float:left;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:0.9em;
+  line-height: auto;
+  color:#A8A8A8;
+}
+
+.bootstrap .rating>i.estrellita {
+  color:#A8A8A8 !important;
+}
+
+.bootstrap i.estrellita.active {
+  color:#FFD37A !important;
+}
+
+.bootstrap .puntaje {
+  text-align: right;
+  color: #707070;
+  font-weight: bolder;
+}
+.bootstrap .puntaje p {
+  font-weight: bold;
+  line-height: auto;
+  font-size:1.3em;
+}
+.bootstrap .user-data {
+  align-self: center;
+}
+.bootstrap .user-img {
+  margin: 10px auto;
+  padding: 15px;
+  align-self: center;
+}
+.bootstrap .light-green {
+  background-color: #A2FDC6;
+}
+/* Final Ranking mobile */
+
+/* Inicio Ranking desktop*/
+@media (min-width:768px) {
+  .bootstrap .blank-wrapper {
+    width: 900px;
+    margin: 100px auto;
+    border-radius: 40px;
+    padding: 40px !important;
+  }
+  .bootstrap .user-img {
+    margin: 20px;
+  }
+  .bootstrap .titulo-seccion {
+    margin: 50px auto;
+  }
+
+}
+/* Final Ranking desktop */
+
 
 @media (min-width:640px) {
 
@@ -329,7 +455,7 @@ h1{
     display: block;
     width: 90vw;
   }
-
+}
 /* FAQ's*/
   .containerPreguntas{
     background-color: #6A6FF7;
