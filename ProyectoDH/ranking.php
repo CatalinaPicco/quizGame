@@ -90,7 +90,7 @@ h1 {
   color:#A8A8A8;
 }
 
-i.material-icons.active {
+i.material-icons.estrellita.ctive {
   color:#FFD37A;
 }
 
@@ -136,8 +136,6 @@ i.material-icons.active {
 
         <!-- header -->
         <?php require_once ("header.php");?>
-
-
         <div class="row justify-content-md-center">
           <section class="blank-wrapper col-xl-12 shadow-lg p-3 mb-5 bg-white">
             <h1 class="titulo-seccion">Ranking</h1>
@@ -152,10 +150,10 @@ i.material-icons.active {
                 <div class="row">
                   <div class="col-6 rating">
                     <?php for ($i = 1; $i <= $oneUser['rating']; $i++) : ?>
-                    <i class="material-icons active">star</i>
+                    <i class="material-icons estrellita active">star</i>
                     <?php endfor; ?>
                     <?php for ($i = 1; $i <= 5 - $oneUser['rating']; $i++) : ?>
-                    <i class="material-icons">star</i>
+                    <i class="material-icons estrellita">star</i>
                     <?php endfor; ?>
                   </div>
                   <div class="col-6 puntaje">
@@ -167,7 +165,6 @@ i.material-icons.active {
             </div>
           </section>
         </div>
-
 
       </div>
       <?php require_once ("scripts.php"); ?>
