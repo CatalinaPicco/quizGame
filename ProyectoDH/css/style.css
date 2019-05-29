@@ -458,13 +458,9 @@ body{
   }
 
   .button-play{
-<<<<<<< HEAD
-    margin-top: 5%;
-  }
-=======
     margin-top: 1%;
     }
->>>>>>> c4b37f94aebcbf4611449679ac9f5a079afb3687
+
 
     .image-t-desktop{
       display: flex;
@@ -539,5 +535,3 @@ body{
     }
 
   }
-
-}
