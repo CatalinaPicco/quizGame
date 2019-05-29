@@ -177,22 +177,26 @@ h1{
   display: none
 }
 
+/* FAQ's */
 .containerFAQ{
   display: block;
 }
 
 .containerPreguntas{
-  background-color: #6A6FF7;
-  border: solid 5px #CDE9FF;
+  background-color: #CDE9FF;
+  border: solid 8px #6A6FF7;
   border-radius: 25px;
   width: 90vw;
   margin: 0 auto;
   position: relative;
-  top: 50px;
+  top: 40px;
 }
 
 .containerPreguntas h1,
 .containerPreguntas li{
+  color: black;
+  margin: auto;
+  margin-top: 1%;
   padding-left: 2vw;
   padding-right: 2vw;
 }
@@ -200,15 +204,16 @@ h1{
 .buscador{
   position: relative;
   top: 15px;
-  left: 2%;
-  width: 70%;
+  left: 10px;
+  width: 60vw;
 }
 
 .buscadorEnviar{
   position: relative;
   top: 15px;
-  width: 26%;
+  width: 25vw;
 }
+/*final FAQ's*/
 
 .tituloJuego{
   margin: auto;
@@ -324,6 +329,26 @@ h1{
     display: block;
     width: 90vw;
   }
+
+/* FAQ's*/
+  .containerPreguntas{
+    background-color: #6A6FF7;
+    border-color: #CDE9FF;
+  }
+
+  .buscador{
+    height: 50px;
+    width: 75vw;
+    font-size: 30px;
+  }
+
+  .buscadorEnviar{
+    height: 50px;
+    width: 12vw;
+    top: 9px;
+  }
+
+/* Final FAQ's*/
 
 }
 
