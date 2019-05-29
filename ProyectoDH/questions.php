@@ -91,7 +91,7 @@ h1 {
 </style>
 
 <body>
-  <div class="container">
+  <div class="container bootstrap">
     <!-- header -->
     <?php require_once ("header.php");?>
 

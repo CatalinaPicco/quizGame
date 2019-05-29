@@ -39,7 +39,7 @@ $faqs = [
 
     <div class="containerPreguntas">
       <section>
-        <form class="" action="faq.php" method="GET">
+        <form class="containerBuscador" action="faq.php" method="GET">
           <input class="buscador" type="text" name="buscar" value="" placeholder="Ingrese su búsqueda aquí...">
           <input class="buscadorEnviar" type="submit" name="" value="Buscar">
         </form>
