@@ -1,6 +1,5 @@
 <?php
 $titulo = "Ranking";
-
 ?>
 
 <!doctype html>

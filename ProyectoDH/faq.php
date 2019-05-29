@@ -1,7 +1,6 @@
   <?php
 $titulo = "FAQ";
 
-
 $faqs = [
   0 => [
     "pregunta" => "Lorem ipsum dolor sit amet???",

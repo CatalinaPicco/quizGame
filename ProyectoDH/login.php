@@ -1,6 +1,5 @@
 <?php
 $titulo = "Registro";
-
 ?>
 
 <!doctype html>

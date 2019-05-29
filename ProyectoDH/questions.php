@@ -1,6 +1,5 @@
 <?php
 $titulo = "Preguntas";
-
 ?>
 
 <!doctype html>
