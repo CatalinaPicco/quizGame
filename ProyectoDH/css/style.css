@@ -313,7 +313,7 @@ h1{
   }
 
   .container-about {
-    margin-top: 0%;
+    margin-top: 0;
     }
 
   .carrousel-mobile{
@@ -330,11 +330,7 @@ h1{
 @media (min-width:1024px) {
 
   .container-section{
-    justify-content:flex-start;
-    }
-
-  .container-about {
-    margin-top: 5%;
+    justify-content:center;
     }
 
   .carrousel-tablet-desktop{
