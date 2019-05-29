@@ -12,26 +12,26 @@ $titulo = "Ranking";
         <!-- header -->
         <?php require_once ("header.php");?>
         <div class="row justify-content-md-center">
-          <section class="bootstrap blank-wrapper col-xl-12 shadow-lg p-3 mb-5 bg-white">
-            <h1 class="bootstrap titulo-seccion">Ranking</h1>
+          <section class="blank-wrapper col-xl-12 shadow-lg p-3 mb-5 bg-white">
+            <h1 class="titulo-seccion">Ranking</h1>
             <?php require_once ("data/rankingList.php"); ?>
-            <div class="bootstrap ranking-wrap row">
+            <div class="ranking-wrap row">
               <?php foreach ($rankingList as $oneUser) : ?>
-              <img class="bootstrap rounded-circle user-img" src="<?=$oneUser['imagen']?>" alt="user">
+              <img class="rounded-circle user-img" src="<?=$oneUser['imagen']?>" alt="user">
               <div class="col-xs-12 col-md-8 user-data">
-                <div class="bootstrap progress">
-                  <div class="bootstrap progress-bar light-green" style="width:<?=$oneUser['porcentaje']?>%"></div>
+                <div class="progress">
+                  <div class="progress-bar light-green" style="width:<?=$oneUser['porcentaje']?>%"></div>
                 </div>
                 <div class="row">
-                  <div class="col-6 bootstrap rating">
+                  <div class="col-6 rating">
                     <?php for ($i = 1; $i <= $oneUser['rating']; $i++) : ?>
-                    <i class="bootstrap material-icons estrellita active">star</i>
+                    <i class="material-icons estrellita active">star</i>
                     <?php endfor; ?>
                     <?php for ($i = 1; $i <= 5 - $oneUser['rating']; $i++) : ?>
-                    <i class="bootstrap material-icons estrellita">star</i>
+                    <i class="material-icons estrellita">star</i>
                     <?php endfor; ?>
                   </div>
-                  <div class="col-6 bootstrap puntaje">
+                  <div class="col-6 puntaje">
                     <p><?=$oneUser['puntos']?> pts.</p>
                   </div>
                 </div>
