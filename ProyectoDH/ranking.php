@@ -76,22 +76,25 @@ h1 {
   top:-9999px;
   clip:rect(0,0,0,0);
 }
-.rating:not(:checked) > label {
+.rating {
   float:left;
   width:1em;
-  /* padding:0 .1em; */
   overflow:hidden;
   white-space:nowrap;
   cursor:pointer;
-  font-size:1.5em;
+  font-size:0.9em;
   line-height: auto;
-  /*font-size:300%;*/
-  /* line-height:1.2; */
-  color:#ddd;
+  color:#A8A8A8;
 }
-.rating:not(:checked) > label:before {
-  content: '★ ';
+
+.rating i {
+  color:#A8A8A8;
 }
+
+i.material-icons.active {
+  color:#FFD37A;
+}
+
 .puntaje {
   text-align: right;
   color: #707070;
@@ -156,85 +159,29 @@ h1 {
         <div class="row justify-content-md-center">
           <section class="blank-wrapper col-xl-12 shadow-lg p-3 mb-5 bg-white">
             <h1 class="titulo-seccion">Ranking</h1>
+            <?php require_once ("data/rankingList.php"); ?>
             <div class="ranking-wrap row">
-              <img class="rounded-circle user-img" src="img/user_1.png" alt="user">
+              <?php foreach ($rankingList as $oneUser) : ?>
+              <img class="rounded-circle user-img" src="<?=$oneUser['imagen']?>" alt="user">
               <div class="col-xs-12 col-md-8 user-data">
                 <div class="progress">
-                  <div class="progress-bar light-green" style="width:70%"></div>
+                  <div class="progress-bar light-green" style="width:<?=$oneUser['porcentaje']?>%"></div>
                 </div>
                 <div class="row">
                   <div class="col-6 rating">
-                    <label for="star1" title="1">1 star</label>
-                    <label for="star2" title="2">2 stars</label>
-                    <label for="star3" title="3">3 stars</label>
-                    <label for="star4" title="4">4 stars</label>
-                    <label for="star5" title="5">5 stars</label>
+                    <?php for ($i = 1; $i <= $oneUser['rating']; $i++) : ?>
+                    <i class="material-icons active">star</i>
+                    <?php endfor; ?>
+                    <?php for ($i = 1; $i <= 5 - $oneUser['rating']; $i++) : ?>
+                    <i class="material-icons">star</i>
+                    <?php endfor; ?>
                   </div>
                   <div class="col-6 puntaje">
-                    <p>3000 pts.</p>
+                    <p><?=$oneUser['puntos']?> pts.</p>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="ranking-wrap row">
-              <img class="rounded-circle user-img" src="img/user_2.png" alt="user">
-              <div class="col-xs-12 col-md-8 user-data">
-                <div class="progress">
-                  <div class="progress-bar light-green" style="width:70%"></div>
-                </div>
-                <div class="row">
-                  <div class="col-6 rating">
-                    <label for="star1" title="1">1 star</label>
-                    <label for="star2" title="2">2 stars</label>
-                    <label for="star3" title="3">3 stars</label>
-                    <label for="star4" title="4">4 stars</label>
-                    <label for="star5" title="5">5 stars</label>
-                  </div>
-                  <div class="col-6 puntaje">
-                    <p>3000 pts.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="ranking-wrap row">
-              <img class="rounded-circle user-img" src="img/user_3.png" alt="user">
-              <div class="col-xs-12 col-md-8 user-data">
-                <div class="progress">
-                  <div class="progress-bar light-green" style="width:70%"></div>
-                </div>
-                <div class="row">
-                  <div class="col-6 rating">
-                    <label for="star1" title="1">1 star</label>
-                    <label for="star2" title="2">2 stars</label>
-                    <label for="star3" title="3">3 stars</label>
-                    <label for="star4" title="4">4 stars</label>
-                    <label for="star5" title="5">5 stars</label>
-                  </div>
-                  <div class="col-6 puntaje">
-                    <p>3000 pts.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="ranking-wrap row">
-              <img class="rounded-circle user-img" src="img/user_4.png" alt="user">
-              <div class="col-xs-12 col-md-8 user-data">
-                <div class="progress">
-                  <div class="progress-bar light-green" style="width:70%"></div>
-                </div>
-                <div class="row">
-                  <div class="col-6 rating">
-                    <label for="star1" title="1">1 star</label>
-                    <label for="star2" title="2">2 stars</label>
-                    <label for="star3" title="3">3 stars</label>
-                    <label for="star4" title="4">4 stars</label>
-                    <label for="star5" title="5">5 stars</label>
-                  </div>
-                  <div class="col-6 puntaje">
-                    <p>3000 pts.</p>
-                  </div>
-                </div>
-              </div>
+              <?php endforeach; ?>
             </div>
           </section>
         </div>
