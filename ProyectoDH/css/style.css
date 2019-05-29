@@ -145,9 +145,7 @@ h1{
   align-items: center;
 }
 
-.container-login {
-  background-image:
-}
+
 .h2-about{
   color: white;
   font-weight: bold;
@@ -199,6 +197,11 @@ h1{
   position: relative;
   top: 15px;
   width: 26%;
+}
+
+
+.container-login {
+  background-image:
 }
 
 .tituloJuego{
