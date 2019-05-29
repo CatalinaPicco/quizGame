@@ -12,8 +12,8 @@ $navAccess=[
 <!-- probando el menu desplegable de bootstrap-->
       <div class="toggle-nav">
         <div class="btn-group">
-          <button type="button" class="btn  " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <span ><i class="material-icons">menu</i></span>
+          <button type="button" class="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="material-icons">menu</i>
           </button>
           <div class="dropdown-menu dropdown-menu-right">
             <button class="dropdown-item" type="button">

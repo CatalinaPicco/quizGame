@@ -58,7 +58,7 @@ header {
 
 .main-nav .toggle-nav{
   position: absolute;
-  top: 15px;
+  top: 20px;
   right: 15px;
 }
 
@@ -131,6 +131,19 @@ ul .nav-profile {
   display: none;
 }
 
+.btn-link{
+  text-decoration: none;
+}
+
+.dropdown-menu  {
+  color:#FFFFFF;
+  background-color: #6A6FF7;
+}
+
+.dropdown-item li a {
+  color:#FFFFFF;
+}
+
 
 .button-play{
   background-color: #8F93F5;
@@ -157,7 +170,7 @@ ul .nav-profile {
   flex-direction: column;
   width: 100vw;
   align-items: center;
-  margin-top: 10%;
+  margin-top:20%;
 }
 
 .h2-about{
