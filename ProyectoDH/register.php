@@ -1,5 +1,5 @@
 <?php
-$titulo = "Login";
+$titulo = "Registro";
 require_once ("controller.php");
 
 if ($_POST) {
@@ -21,14 +21,16 @@ if (!$erroresTotales) {
   <?php require_once ("head.php"); ?>
 
   <body>
-    <div class="container-login">
+    <div class="container-register">
 
 
       <!-- header -->
       <?php require_once ("header.php");?>
-
-    <div class="login">
-    <form class="ingreso" action="index.html" method="post">
+<div class="espacios-register">
+<br><br><br><br><br>
+</div>
+    <div class="formulario-register">
+    <form class="ingreso" action="perfil.php" method="post">
       <p>
       <label for="nombre">
       </label>
@@ -74,13 +76,13 @@ if (!$erroresTotales) {
         </div>
       <?php endif; ?>
       <p>
-        <button type="button" name="button">Iniciar Sesion</button>
+        <button type="button" name="button">Registrarse</button>
       </p>
     </form>
     </div>
 
-<h1 class= "tituloJuego">Quiz Game</h1>
-<h2 class= "subitituloJuego">Reinforcement Tool for Corporate Training</h2>
+<h1 class="h1-register">Quiz Game</h1>
+<h2 class="h2-register">Reinforcement Tool for Corporate Training</h2>
 
 
 

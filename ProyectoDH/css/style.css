@@ -216,17 +216,39 @@ ul .nav-profile {
 }
 /*final FAQ's*/
 
-.tituloJuego{
-  margin: auto;
+/*Principio Register*/
+.container-register{
+  background-image: url("../img/home/background-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
 }
 
-.subitituloJuego{
-  margin: auto;
-}
+.h1-register{
 
-.login{
-  display:flex;
+  text-align: center;
 }
+.h2-register{
+text-align: center;
+}
+.formulario-register{
+  text-align: right;
+  margin-right: 15%;
+}
+/*final Register*/
+
+/*principio perfil*/
+.foto-perfil{
+
+}
+.nombre-perfil{
+
+}
+.email-perfil{
+
+}
+/*final perfil*/
+
 
 /* Inicio Ranking Mobile*/
 
@@ -539,5 +561,3 @@ body{
     }
 
   }
-
-}
