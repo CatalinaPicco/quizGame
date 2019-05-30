@@ -7,7 +7,6 @@ $titulo = "Login";
   <?php require_once ("head.php"); ?>
 
   <body>
-<<<<<<< HEAD
 <div class="container-login">
   <!-- header -->
   <?php require_once ("header.php");?>
@@ -25,7 +24,6 @@ $titulo = "Login";
   </div>
 </section>
 </div>
-=======
   <div class="container">
   <!-- header -->
   <?php require_once ("header.php");?>
@@ -45,7 +43,6 @@ $titulo = "Login";
       </form>
     </div>
   </body>
->>>>>>> e788cc38baf415b42d749981879fb08d0ac38824
 
   <?php require_once ("scripts.php"); ?>
   </body>
