@@ -229,6 +229,28 @@ ul .nav-profile {
 }
 /*final FAQ's*/
 
+/*Login*/
+.containerLogin{
+  width: 50vw;
+  margin: 0 auto;
+  position: relative;
+  top: 150px;
+}
+
+.inputLogin{
+  background-color: #CDE9FF;
+  border-radius: 25px;
+  text-align: center;
+  width: 50vw;
+  height: 40px;
+}
+
+.inputLogin:focus{
+  background-color: #6A6FF7;
+}
+
+/*final Login*/
+
 .tituloJuego{
   margin: auto;
 }
@@ -506,10 +528,6 @@ body{
   }
 
 /* FAQ's*/
-.containerPreguntas{
-  background-color: #6A6FF7;
-  border-color: #CDE9FF;
-}
 
 .buscador{
   height: 50px;
