@@ -8,7 +8,7 @@ $titulo = "About";
   <body>
     <div class="container-ppal"> <!-- Contenedor ppal -->
 
-<?php require_once ("header.php");?>
+
 
     <section class="container-section">
       <span class="container-about">
@@ -94,6 +94,7 @@ $titulo = "About";
       <div class="button-play">
         <a href="#">Jugar</a>
       </div>
+      <?php require_once ("header.php");?>
 </section>
   </div>
     <?php require_once ("scripts.php"); ?>

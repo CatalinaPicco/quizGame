@@ -58,7 +58,7 @@ header {
 
 .main-nav .toggle-nav{
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 15px;
 }
 
@@ -131,6 +131,19 @@ ul .nav-profile {
   display: none;
 }
 
+.btn-link{
+  text-decoration: none;
+}
+
+.dropdown-menu  {
+  color:#FFFFFF;
+  background-color: #6A6FF7;
+}
+
+.dropdown-item li a {
+  color:#FFFFFF;
+}
+
 
 .button-play{
   background-color: #8F93F5;
@@ -157,7 +170,7 @@ ul .nav-profile {
   flex-direction: column;
   width: 100vw;
   align-items: center;
-  margin-top: 10%;
+  margin-top:20%;
 }
 
 .h2-about{
@@ -216,12 +229,39 @@ ul .nav-profile {
 }
 /*final FAQ's*/
 
+<<<<<<< HEAD
 /*Principio Register*/
 .container-register{
   background-image: url("../img/home/background-mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: auto;
+=======
+/*Login*/
+.containerLogin{
+  width: 50vw;
+  margin: 0 auto;
+  position: relative;
+  top: 150px;
+}
+
+.inputLogin{
+  background-color: #CDE9FF;
+  border-radius: 25px;
+  text-align: center;
+  width: 50vw;
+  height: 40px;
+}
+
+.inputLogin:focus{
+  background-color: #6A6FF7;
+}
+
+/*final Login*/
+
+.tituloJuego{
+  margin: auto;
+>>>>>>> e788cc38baf415b42d749981879fb08d0ac38824
 }
 
 .h1-register{
@@ -480,13 +520,9 @@ body{
   }
 
   .button-play{
-<<<<<<< HEAD
-    margin-top: 5%;
-  }
-=======
     margin-top: 1%;
     }
->>>>>>> c4b37f94aebcbf4611449679ac9f5a079afb3687
+
 
     .image-t-desktop{
       display: flex;
@@ -519,10 +555,6 @@ body{
   }
 
 /* FAQ's*/
-.containerPreguntas{
-  background-color: #6A6FF7;
-  border-color: #CDE9FF;
-}
 
 .buscador{
   height: 50px;
