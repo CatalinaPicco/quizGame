@@ -33,7 +33,7 @@ $faqs = [
 <html lang="es">
   <?php require_once ("head.php"); ?>
 
-  <body class="containerFAQ">
+  <body>
     <!-- header -->
     <?php require_once ("header.php");?>
 

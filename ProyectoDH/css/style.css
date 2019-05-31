@@ -60,6 +60,7 @@ header {
   position: absolute;
   top: 20px;
   right: 15px;
+  z-index: 999;
 }
 
 .nav-profile-ico a{
@@ -145,6 +146,7 @@ ul .nav-profile {
 }
 
 
+
 .button-play{
   background-color: #8F93F5;
   width: 100px;
@@ -191,10 +193,19 @@ ul .nav-profile {
   display: none
 }
 
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin:0 5px;
+  }
+
+
+
+
+
 /* FAQ's */
-.containerFAQ{
-  display: block;
-}
 
 .containerPreguntas{
   background-color: #CDE9FF;
@@ -202,8 +213,9 @@ ul .nav-profile {
   border-radius: 25px;
   width: 90vw;
   margin: 0 auto;
-  position: relative;
-  top: 40px;
+  margin-top: 20%;
+
+
 }
 
 .containerPreguntas h1,
@@ -216,16 +228,13 @@ ul .nav-profile {
 }
 
 .buscador{
-  position: relative;
-  top: 15px;
-  left: 10px;
-  width: 60vw;
+  width: 55vw;
+  margin:10px;
 }
 
 .buscadorEnviar{
-  position: relative;
-  top: 15px;
-  width: 25vw;
+  margin:10px;
+
 }
 /*final FAQ's*/
 
@@ -288,8 +297,10 @@ text-align: center;
 }
 /*final perfil*/
 
-
 /* Inicio Ranking Mobile*/
+
+
+
 
 .blank-wrapper {
   background-color: white;
@@ -360,6 +371,8 @@ i.estrellita.active {
 /* Final Ranking mobile */
 
 /* Inicio questions admin*/
+
+
 
 h5.bootstrap {
   margin: 15px auto;
@@ -432,11 +445,8 @@ h5.bootstrap {
   .titulo-seccion {
     margin: 50px auto;
   }
-}
+
 /* Final Ranking desktop */
-
-
-@media (min-width:640px) {
 
 body{
   background-image: url(../img/fondo.png);
@@ -522,22 +532,21 @@ body{
     margin-top: 1%;
     }
 
-
-    .image-t-desktop{
-      display: flex;
-      margin: 0 auto;
-      width: 100%;
-      align-items: center;
-     }
-
-    .image-t-desktop img{
-      width: 90vw;
-      margin: 0 auto;
+  .image-t-desktop{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
     }
 
-      .image-mobile{
-      display:none;
-      }
+  .image-t-desktop img{
+    width: 90vw;
+    margin: 0 auto;
+    }
+
+  .image-mobile{
+    display:none;
+    }
 
 
   .container-about {
@@ -554,17 +563,15 @@ body{
   }
 
 /* FAQ's*/
-
 .buscador{
-  height: 50px;
-  width: 75vw;
-  font-size: 30px;
+  width: 70vw;
+  margin:10px ;
 }
 
 .buscadorEnviar{
-  height: 50px;
-  width: 12vw;
-  top: 9px;
+  margin-top:10px;
+  margin-left: 30px;
+
 }
 
 /* Final FAQ's*/
