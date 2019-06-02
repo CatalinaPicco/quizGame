@@ -1,7 +1,4 @@
 <?php
-$titulo = "Perfil";
-$_POST["nombre"] = $nombre;
-$_POST["email"] = $email;
 
 ?>
 
@@ -10,31 +7,48 @@ $_POST["email"] = $email;
   <?php require_once ("head.php"); ?>
 
 <body>
-  <div class="container-perfil">
+  <div class="containerPerfil">
     <!-- header -->
     <?php require_once ("header.php");?>
 
-    <section class = "section-perfil">
+      <section class = "sectionPerfil">
+
+        <br><br><br><br><br>
+
+
+</div>
+<div class="PerfilFoto">
+
 
         <div class="foto-perfil">
-          <img src="#" alt="Foto del usuario">
+          <img src="img/user_1.png" alt="Foto del usuario">
         </div>
 
+</div>
+<div class="PerfilUsuario">
+
+
         <div class="nombre-perfil">
-        <?= $nombre ?>
+        Nombre
         </div>
 
         <div class="email-perfil">
-          <?= $email ?>
-          </div>
+          email
+        </div>
+
+</div>
+
+<div class="PerfilRanking">
+
 
           <div class="estrellas-perfil">
-
+            las estrellas
           </div>
 
           <div class="puntaje-perfil">
-
+           el puntaje
           </div>
+</div>
     </section>
   </div>
 <?php require_once ("scripts.php"); ?>

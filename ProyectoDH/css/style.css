@@ -245,6 +245,11 @@ ul .nav-profile {
   background-repeat: no-repeat;
   width: auto;
 }
+
+.alert alert-danger{
+  background-color: red
+}
+
 /*Login*/
 
 .containerLogin {
@@ -273,27 +278,38 @@ ul .nav-profile {
 }
 
 .h1-register{
-
   text-align: center;
+  font-family: sans-serif;
 }
 .h2-register{
 text-align: center;
+font-family: sans-serif;
 }
 .formulario-register{
   text-align: right;
   margin-right: 15%;
+  font-family: sans-serif;
 }
 /*final Register*/
 
 /*principio perfil*/
-.foto-perfil{
+. containerPerfil {
 
 }
-.nombre-perfil{
+
+. sectionPerfil {
 
 }
-.email-perfil{
 
+. PerfilFoto{
+background-color: red
+
+}
+. PerfilUsuario {
+background-color: blue
+}
+. PerfilRanking {
+background-color: yellow
 }
 /*final perfil*/
 

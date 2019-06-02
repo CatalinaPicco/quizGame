@@ -9,7 +9,7 @@ if ($_POST) {
   $erroresTotales = validacion();
 
 if (!$erroresTotales) {
-  header('location: profile.php');
+  header("location: perfil.php");
   exit;
 }
 }
@@ -30,7 +30,7 @@ if (!$erroresTotales) {
 <br><br><br><br><br>
 </div>
     <div class="formulario-register">
-    <form class="ingreso" action="perfil.php" method="post">
+    <form class="ingreso" action="" method="post">
       <p>
       <label for="nombre">
       </label>
@@ -76,7 +76,7 @@ if (!$erroresTotales) {
         </div>
       <?php endif; ?>
       <p>
-        <button type="button" name="button">Registrarse</button>
+        <button type="submit" name="button">Registrarse</button>
       </p>
     </form>
     </div>
