@@ -13,8 +13,9 @@
 
       <section class = "sectionPerfil">
 
-        <br><br><br><br><br>
 
+        <br><br><br><br><br>
+<h1 class = "tituloPerfil">Usuario</h1>
 
 </div>
 <div class="PerfilFoto">
@@ -29,26 +30,26 @@
 
 
         <div class="nombre-perfil">
-        Nombre
+        "Nombre de usuario"
         </div>
 
         <div class="email-perfil">
-          email
+        "Direccion de email"
         </div>
 
 </div>
 
 <div class="PerfilRanking">
 
+          <div class="puntaje-perfil">
+          10500 Puntos
+          </div>
 
           <div class="estrellas-perfil">
-            las estrellas
+          <i class="material-icons estrellita active">star</i>
           </div>
 
-          <div class="puntaje-perfil">
-           el puntaje
-          </div>
-</div>
+  </div>
     </section>
   </div>
 <?php require_once ("scripts.php"); ?>

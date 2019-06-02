@@ -293,23 +293,32 @@ font-family: sans-serif;
 /*final Register*/
 
 /*principio perfil*/
-. containerPerfil {
+.containerPerfil {
 
 }
 
-. sectionPerfil {
+.sectionPerfil {
 
 }
-
-. PerfilFoto{
-background-color: red
+.tituloPerfil{
+font-family: sans-serif;
+margin-left: 5%;
 
 }
-. PerfilUsuario {
-background-color: blue
+.PerfilFoto{
+font-family: sans-serif;
+margin-left: 5%;
+
 }
-. PerfilRanking {
-background-color: yellow
+.PerfilUsuario {
+font-family: sans-serif;
+margin-left: 5%;
+
+}
+.PerfilRanking {
+font-family: sans-serif;
+margin-left: 5%;
+
 }
 /*final perfil*/
 
