@@ -18,7 +18,7 @@ if (empty($email)) {
 }
 
 if (empty($password)) {
-$errores["inPassword"] = "La contraseña no puede estar vacía";  
+$errores["inPassword"] = "La contraseña no puede estar vacía";
 } elseif ( strlen($password) < 5 ) {
   $errores["inPassword"] = "La contraseña debe tener 5 letras o más";
 }
