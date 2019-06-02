@@ -213,8 +213,7 @@ ul .nav-profile {
   border-radius: 25px;
   width: 90vw;
   margin: 0 auto;
-  margin-top: 20%;
-
+  margin-top: 10%;
 
 }
 
@@ -228,12 +227,13 @@ ul .nav-profile {
 }
 
 .buscador{
-  width: 55vw;
+  width: 68vw;
   margin:10px;
+  margin-right: 0px;
 }
 
 .buscadorEnviar{
-  margin:10px;
+  width: 15vw;
 
 }
 /*final FAQ's*/
@@ -563,15 +563,19 @@ body{
   }
 
 /* FAQ's*/
+.containerPreguntas{
+  margin-top: 7%;
+}
+
 .buscador{
   width: 70vw;
-  margin:10px ;
+  margin:10px;
+  margin-right: 0px;
 }
 
 .buscadorEnviar{
   margin-top:10px;
-  margin-left: 30px;
-
+  width: 16vw;
 }
 
 /* Final FAQ's*/
