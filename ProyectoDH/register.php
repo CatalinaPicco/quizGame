@@ -21,13 +21,13 @@ if (!$erroresTotales) {
   <?php require_once ("head.php"); ?>
 
   <body>
+    <!-- header -->
+    <?php require_once ("header.php");?>
+
     <div class="container-register">
 
-
-      <!-- header -->
-      <?php require_once ("header.php");?>
 <div class="espacios-register">
-<br><br><br><br><br>
+
 </div>
     <div class="formulario-register">
     <form class="ingreso" action="" method="post">
@@ -81,8 +81,6 @@ if (!$erroresTotales) {
     </form>
     </div>
 
-<h1 class="h1-register">Quiz Game</h1>
-<h2 class="h2-register">Reinforcement Tool for Corporate Training</h2>
 
 
 

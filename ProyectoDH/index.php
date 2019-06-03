@@ -2,7 +2,7 @@
 $titulo = "Index";
 ?>
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <?php require_once ("head.php"); ?>
 

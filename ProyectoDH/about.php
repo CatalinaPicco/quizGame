@@ -2,7 +2,7 @@
 $titulo = "About";
 ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es">
 <?php require_once ("head.php"); ?>
 
   <body>
