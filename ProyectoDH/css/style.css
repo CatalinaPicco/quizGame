@@ -264,13 +264,13 @@ footer{
 
 .containerLogin {
   width: 50vw;
-  height: 100vh;
+  height: 85vh;
   margin: 0 auto;
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-justify-content: space-around;
-margin-top: 50% 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 50% 0;
 }
 
 .inputLogin{
