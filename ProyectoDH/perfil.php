@@ -1,5 +1,5 @@
 <?php
-
+$titulo = "Perfil";
 ?>
 
 <!doctype html>
@@ -7,27 +7,17 @@
   <?php require_once ("head.php"); ?>
 
 <body>
-  <div class="containerPerfil">
-    <!-- header -->
-    <?php require_once ("header.php");?>
+<div class="container-ppal">
+  <!-- header -->
+  <?php require_once ("header.php");?>
 
       <section class = "sectionPerfil">
 
-
-        <br><br><br><br><br>
 <h1 class = "tituloPerfil">Usuario</h1>
-
-</div>
-<div class="PerfilFoto">
-
 
         <div class="foto-perfil">
           <img src="img/user_1.png" alt="Foto del usuario">
         </div>
-
-</div>
-<div class="PerfilUsuario">
-
 
         <div class="nombre-perfil">
         "Nombre de usuario"
@@ -37,10 +27,6 @@
         "Direccion de email"
         </div>
 
-</div>
-
-<div class="PerfilRanking">
-
           <div class="puntaje-perfil">
           10500 Puntos
           </div>
@@ -49,7 +35,6 @@
           <i class="material-icons estrellita active">star</i>
           </div>
 
-  </div>
     </section>
   </div>
 <?php require_once ("footer.php"); ?>

@@ -15,8 +15,8 @@
           </div>
         </div>
 </div>
-        <ul class="nav-profile-ico">  <?php foreach ($navLinks as $linkTxt => $linkUrl) : ?>
-          <i class="material-icons">account_circle</i><a href="<?php echo $linkUrl ?>">
+        <ul class="nav-profile-ico">  <?php foreach ($navLinks as $linkUrl) : ?>
+          <i class="material-icons">account_circle</i><a href="<?= $linkUrl;?>">
             <?php endforeach; ?></ul>
         <ul class="nav-profile">
           <?php foreach ($navLinks as $linkTxt => $linkUrl) : ?>

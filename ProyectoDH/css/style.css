@@ -324,24 +324,38 @@ font-family: sans-serif;
 
 /*principio perfil*/
 
+.sectionPerfil{
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 10%;
+}
+
 .tituloPerfil{
-font-family: sans-serif;
-margin-left: 5%;
-
+margin-top: 10%;
 }
-.PerfilFoto{
-font-family: sans-serif;
-margin-left: 5%;
 
+.foto-perfil{
+margin: 5% 0;
 }
-.PerfilUsuario {
-font-family: sans-serif;
-margin-left: 5%;
 
+.nombre-perfil {
+font-size: 1.2em;
+font-weight: bold;
 }
-.PerfilRanking {
-font-family: sans-serif;
-margin-left: 5%;
+
+.email-perfil{
+font-size: 1em;
+}
+.puntaje-perfil{
+  margin-top: 10%;
+}
+.estrellas-perfil {
+margin-top: 5%;
 
 }
 /*final perfil*/
@@ -660,4 +674,34 @@ body{
       width: 50vw;
     }
 
+    /* INICIO perfil*/
+
+    .sectionPerfil{
+    margin-left: 0;
+    }
+
+    .tituloPerfil{
+    margin-top: 5%;
+    }
+
+    .foto-perfil{
+    margin: 3% 0;
+    }
+
+    .nombre-perfil {
+    font-size: 1.2em;
+    font-weight: bold;
+    }
+
+    .email-perfil{
+    font-size: 1em;
+    }
+    .puntaje-perfil{
+      margin-top: 3%;
+    }
+    .estrellas-perfil {
+    margin-top: 3%;
+    }
+
+    /*FINAL Perfil*/
   }
