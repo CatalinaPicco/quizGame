@@ -14,6 +14,8 @@ $titulo = "Login";
   <!-- header -->
   <?php require_once ("header.php");?>
 
+
+
     <div class="containerLogin">
       <form class="" action="" method="post">
         <input class="inputLogin" type="text" name="nameOrEmail" value="" placeholder="Usuario/Email">
@@ -28,8 +30,5 @@ $titulo = "Login";
         <input id="submitLogin" type="submit" name="" value="Iniciar sesión">  ¿Aún no tenés cuenta? <a href="register.php">Registrate</a>
       </form>
     </div>
-  </body>
 
-  <?php require_once ("scripts.php"); ?>
-  </body>
-</html>
+  <?php require_once ("footer.php"); ?>

@@ -28,7 +28,7 @@ require_once ("header.php");
                   <i class="material-icons">search</i>
                 </div>
                 <!--end of col-->
-                <div class="col"> 
+                <div class="col">
                   <input class="form-control form-control-lg form-control-borderless input-search" type="search" placeholder="Buscar pregunta">
                 </div>
                 <!--end of col-->
@@ -52,6 +52,4 @@ require_once ("header.php");
       </section>
     </div>
   </div>
-  <?php require_once ("scripts.php"); ?>
-</body>
-</html>
+<?php require_once ("footer.php"); ?>

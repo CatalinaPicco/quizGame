@@ -56,6 +56,4 @@ $faqs = [
         </ul>
       </section>
     </div>
-      <?php require_once ("scripts.php"); ?>
-  </body>
-</html>
+  <?php require_once ("footer.php"); ?>
