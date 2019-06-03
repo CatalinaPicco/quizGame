@@ -40,7 +40,7 @@ if (!$erroresTotales) {
       </p>
       <?php if (isset($errorsInRegister["inFullName"])) : ?>
         <div class="alert alert-danger">
-          <?= $errorsInRegister['inFullName']; ?>
+          <?= $errorsInRegister["inFullName"]; ?>
         </div>
       <?php endif; ?>
       <p>

@@ -13,7 +13,7 @@ $titulo = "Perfil";
 
       <section class = "sectionPerfil">
 
-<h1 class = "tituloPerfil">Usuario</h1>
+<h1 class="h1-index"><strong>Usuario</strong></h1>
 
         <div class="foto-perfil">
           <img src="img/user_1.png" alt="Foto del usuario">
