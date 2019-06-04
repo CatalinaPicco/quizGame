@@ -38,9 +38,9 @@ if (!$erroresTotales) {
       value="<?= isset($fullNameInPost) ? $fullNameInPost : ''; ?>"
       placeholder="Nombre">
       </p>
-      <?php if (isset($errorsInRegister["inFullName"])) : ?>
+      <?php if (isset($erroresTotales["inFullName"])) : ?>
         <div class="alert alert-danger">
-          <?= $errorsInRegister["inFullName"]; ?>
+          <?= $erroresTotales["inFullName"]; ?>
         </div>
       <?php endif; ?>
       <p>
@@ -50,9 +50,9 @@ if (!$erroresTotales) {
         value="<?= isset($emailInPost) ? $emailInPost : ''; ?>"
         placeholder="Correo electrónico">
       </p>
-      <?php if ( isset($errorsInRegister["inEmail"]) ) : ?>
+      <?php if ( isset($erroresTotales["inEmail"]) ) : ?>
         <div class="alert alert-danger">
-          <?= $errorsInRegister["inEmail"]; ?>
+          <?= $erroresTotales["inEmail"]; ?>
         </div>
       <?php endif; ?>
       <p>
@@ -60,9 +60,9 @@ if (!$erroresTotales) {
         </label>
         <input id="password" type="password" name="password" value="" placeholder="Contraseña">
       </p>
-      <?php if ( isset($errorsInRegister["inPassword"]) ) : ?>
+      <?php if ( isset($erroresTotales["inPassword"]) ) : ?>
         <div class="alert alert-danger">
-          <?= $errorsInRegister["inPassword"]; ?>
+          <?= $erroresTotales["inPassword"]; ?>
         </div>
       <?php endif; ?>
       <p>
