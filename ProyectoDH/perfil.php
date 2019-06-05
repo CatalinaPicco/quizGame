@@ -7,11 +7,11 @@ $titulo = "Perfil";
   <?php require_once ("head.php"); ?>
 
 <body>
-<div class="container-ppal">
+<div class="container container-ppal mt-5 pt-5">
   <!-- header -->
   <?php require_once ("header.php");?>
 
-      <section class = "sectionPerfil">
+      <section class="sectionPerfil">
 
 <h1 class="h1-index"><strong>Usuario</strong></h1>
 

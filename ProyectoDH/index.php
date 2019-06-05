@@ -13,9 +13,9 @@ $titulo = "Index";
 
 <section class="container-section">
 
-  <h1 class="h1-index"><strong>Nombre del juego</strong></h1>
+  <h1 class="h1-index"><strong>Sabiondos</strong></h1>
 
-<h2 class="sub-ppal">Aquí va un subtitulo</h2>
+<h2 class="sub-ppal">Un juego para despertar tu curiosidad</h2>
 
  <div class="image-mobile">
    <img src="img/home/background-mobile.png" alt="imagen de jugadores en podio">

@@ -27,7 +27,7 @@ $titulo = "Login";
         <input type="checkbox" id="rememberme" name="rememberme" value=""><label for="rememberme">Recordarme</label>
         <br>
         <br>
-        <input id="submitLogin" type="submit" name="" value="Iniciar sesión">  ¿Aún no tenés cuenta? <a href="register.php">Registrate</a>
+        <input class="btn btn-success" id="submitLogin" type="submit" name="" value="Iniciar sesión">  ¿Aún no tenés cuenta? <a href="register.php">Registrate</a>
       </form>
     </div>
 

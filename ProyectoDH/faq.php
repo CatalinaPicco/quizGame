@@ -38,11 +38,28 @@ $faqs = [
     <?php require_once ("header.php");?>
 
     <div class="containerPreguntas">
-      <section>
-        <form class="containerBuscador" action="faq.php" method="GET">
+      <section class="p-5">
+        <div class="col-md-12 row justify-content-center search-row">
+                  <form>
+                    <div class="card card-sm search row">
+                      <div class="col-lg-12 card-body row no-gutters align-items-center search-container">
+                        <div class="col-auto">
+                          <i class="material-icons">search</i>
+                        </div>
+                        <!--end of col-->
+                        <div class="col">
+                          <input class="form-control form-control-lg form-control-borderless input-search" type="search" placeholder="Buscar pregunta">
+                        </div>
+                        <!--end of col-->
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+        <!-- <form class="containerBuscador" action="faq.php" method="GET">
           <input class="buscador" type="text" name="buscar" value="" placeholder="Ingrese su búsqueda aquí...">
           <input class="buscadorEnviar" type="submit" name="" value="Buscar">
-        </form>
+        </form> -->
         <br>
         <h1>Preguntas Frecuentes</h1>
         <br>

@@ -24,17 +24,17 @@ if (!$erroresTotales) {
     <!-- header -->
     <?php require_once ("header.php");?>
 
-    <div class="container-register">
+    <div class="container text-center containerLogin">
 
 <div class="espacios-register">
 
 </div>
-    <div class="formulario-register">
+    <div>
     <form class="ingreso" action="" method="post">
       <p>
       <label for="nombre">
       </label>
-      <input id="nombre" type="text" name="nombre"
+      <input class="inputLogin" id="nombre" type="text" name="nombre"
       value="<?= isset($fullNameInPost) ? $fullNameInPost : ''; ?>"
       placeholder="Nombre">
       </p>
@@ -46,7 +46,7 @@ if (!$erroresTotales) {
       <p>
         <label for="email">
         </label>
-        <input id="email" type="email" name="email"
+        <input class="inputLogin" id="email" type="email" name="email"
         value="<?= isset($emailInPost) ? $emailInPost : ''; ?>"
         placeholder="Correo electrónico">
       </p>
@@ -58,7 +58,7 @@ if (!$erroresTotales) {
       <p>
         <label for="password">
         </label>
-        <input id="password" type="password" name="password" value="" placeholder="Contraseña">
+        <input class="inputLogin" id="password" type="password" name="password" value="" placeholder="Contraseña">
       </p>
       <?php if ( isset($erroresTotales["inPassword"]) ) : ?>
         <div class="alert alert-danger">
@@ -68,7 +68,7 @@ if (!$erroresTotales) {
       <p>
         <label for="repassword">
         </label>
-        <input id="repassword" type="password" name="repassword" value="" placeholder="Repetir contraseña">
+        <input class="inputLogin" id="repassword" type="password" name="repassword" value="" placeholder="Repetir contraseña">
       </p>
       <?php if ( isset($errorsInRegister["inRepassword"]) ) : ?>
         <div class="alert alert-danger">
@@ -76,7 +76,7 @@ if (!$erroresTotales) {
         </div>
       <?php endif; ?>
       <p>
-        <button type="submit" name="button">Registrarse</button>
+        <button class="btn btn-success" type="submit" name="button">Registrarse</button>
       </p>
     </form>
     </div>
