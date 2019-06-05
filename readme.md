@@ -1,10 +1,10 @@
-# Título del Proyecto
+# Sabiondos
 
 Un juego de preguntas y respuestas tipo preguntados
 
 ## ¿En qué consiste este proyecto?
 
-$nombreDelJuego es un proyecto de código abierto hecho en HTML, CSS, PHP y JavaScript.
+Sabiondos es un proyecto de código abierto hecho en HTML, CSS, PHP y JavaScript.
 
 ### Prerequisitos
 
