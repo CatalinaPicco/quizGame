@@ -2,13 +2,19 @@
 function validacion(){
  $errores = [];
 
+ $userName = trim($_POST['userName']);
  $fullName = trim($_POST['nombre']);
  $email = trim($_POST['email']);
  $password = trim($_POST['password']);
  $repassword = trim($_POST['repassword']);
 
+
+  if (empty($userName)) {
+  $errores["inUserName"] = "Tienes que elegir un nombre de usuario";
+  }
+
 if (empty($fullName)) {
-  $errores["inFullName"] = "El campo usuario no puede estar vacío";
+  $errores["inFullName"] = "Tienes que escribir tu nombre completo";
 }
 
 if (empty($email)) {

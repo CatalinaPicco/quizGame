@@ -2,7 +2,11 @@
 $titulo = "Registro";
 require_once ("controller.php");
 
+$paises = file_get_contents('https://restcountries.eu/rest/v2/all');
+$arrayPaises = json_decode($paises, true);
+
 if ($_POST) {
+  $userNameInPost = trim($_POST["userName"]);
   $fullNameInPost = trim($_POST["nombre"]);
   $emailInPost = trim($_POST["email"]);
 
@@ -32,6 +36,19 @@ if (!$erroresTotales) {
     <div>
     <form class="ingreso" action="" method="post">
       <p>
+        <label for="userName">
+        </label>
+        <input class = "inputLogin" id="userName" type="text" name="userName"
+        value="<?= isset($userNameInPost) ? $userNameInPost : ''; ?>"
+        placeholder="Nombre de usuario">
+      </p>
+          <?php if (isset($erroresTotales["inUserName"])) : ?>
+        <div class="alert alert-danger">
+          <?= $erroresTotales["inUserName"]; ?>
+        </div>
+          <?php endif; ?>
+        <p>
+      <p>
       <label for="nombre">
       </label>
       <input class="inputLogin" id="nombre" type="text" name="nombre"
@@ -56,6 +73,13 @@ if (!$erroresTotales) {
         </div>
       <?php endif; ?>
       <p>
+          <select class = "pais">
+              <?php foreach ($arrayPaises as $unPais) : ?>
+                <option value=""> <?php echo $unPais['name']?> </option>
+              <?php endforeach ; ?>
+          </select>
+        </p>
+        <p>
         <label for="password">
         </label>
         <input class="inputLogin" id="password" type="password" name="password" value="" placeholder="Contraseña">
