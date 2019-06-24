@@ -228,23 +228,28 @@ footer{
 /* FAQ's */
 
 .containerPreguntas{
-  background-color: #CDE9FF;
-  border: solid 8px #6A6FF7;
-  border-radius: 25px;
-  width: 90vw;
+  background-color: #6A6FF7;
   margin: 0 auto;
   margin-top: 15%;
   margin-bottom: 5%;
-
 }
 
-.containerPreguntas h1,
-.containerPreguntas li{
-  color: black;
+.containerPreguntas h1{
+  color: #F1F1F1;
+  font-size: 2em;
+  font-weight: bold;
   margin: auto;
   margin-top: 1%;
   padding-left: 2vw;
   padding-right: 2vw;
+}
+
+.card, .card-header{
+  border-radius: 25px;
+}
+
+.margenIzq{
+  margin-left: 1%;
 }
 
 .buscador{
@@ -703,4 +708,14 @@ body{
     }
 
     /*FINAL Perfil*/
+
+    /* FAQ's*/
+
+    .containerPreguntas{
+      margin-top: 5.75%;
+    }
+  /*FINAL FAQ's*/
+
+
+
   }

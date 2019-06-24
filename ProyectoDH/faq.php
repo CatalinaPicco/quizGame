@@ -12,7 +12,7 @@ $titulo = "FAQ";
 
     <div class="containerPreguntas">
       <section class="p-5">
-        <div class="col-md-12 row justify-content-center search-row">
+        <div class="col-md-12 row justify-content-center search-row margenIzq">
           <form>
             <div class="card card-sm search row">
               <div class="col-lg-12 card-body row no-gutters align-items-center search-container">
@@ -124,5 +124,6 @@ $titulo = "FAQ";
   					</div>
   				</div>
   			</div>
-        <br><br><br>
+        	</div>
+        <br>
   <?php require_once ("footer.php"); ?>
