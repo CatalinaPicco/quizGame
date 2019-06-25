@@ -10,6 +10,24 @@ if ($_POST) {
   $fullNameInPost = trim($_POST["nombre"]);
   $emailInPost = trim($_POST["email"]);
 
+if ($_FILES) {
+  if ($_FILES["imagen"]["error"] !=0) {
+    echo "Hubo un error al cargar la imagen";
+  } else {
+  $ext = pathinfo($_FILES["imagen"]["name"], PATHINFO_EXTENSION);
+  if ($ext != "jpg" && $ext != "jpeg" && $ext != "png") {
+    echo "La imagen debe ser jpg, jpeg o png <br>";
+  }  else {
+    move_uploaded_file($_FILES["imagen"]["tmp_name"],"archivos/imagen." . $ext);
+  }
+  }
+}
+
+$hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
+
+
+
+
   $erroresTotales = validacion();
 
 if (!$erroresTotales) {
@@ -72,8 +90,8 @@ if (!$erroresTotales) {
           <?= $erroresTotales["inEmail"]; ?>
         </div>
       <?php endif; ?>
-      <p>
-          <select class = "pais">
+        <p>
+          <select class = "inputLogin">
               <?php foreach ($arrayPaises as $unPais) : ?>
                 <option value=""> <?php echo $unPais['name']?> </option>
               <?php endforeach ; ?>
@@ -104,7 +122,17 @@ if (!$erroresTotales) {
       </p>
     </form>
     </div>
-
+    <p>
+      <form class="" action="index.html" method="post" enctype="multipart/form-data">
+        <div class="">
+          <label for="">Imagen</label>
+          <input type="file" name="imagen" value="">
+        </div>
+          <div class="">
+            <input type="submit" name="" value="enviar">
+          </div>
+      </form>
+    </p>
 
 
 
