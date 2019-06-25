@@ -193,6 +193,12 @@ ul .nav-profile {
   display: block;
 }
 
+.card-img-top{
+    width: 80%;
+    margin:auto;
+margin-top: 5%;
+}
+
 .carrousel-tablet-desktop{
   display: none
 }
@@ -632,7 +638,15 @@ body{
   .carrousel-tablet-desktop{
     display: flex;
     width: 90vw;
+    height: 250px;
   }
+
+  .card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 
   /*FINAL about*/
 
