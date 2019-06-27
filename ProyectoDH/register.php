@@ -6,6 +6,7 @@ $paises = file_get_contents('https://restcountries.eu/rest/v2/all');
 $arrayPaises = json_decode($paises, true);
 
 if ($_POST) {
+  //var_dump($_POST);
   $userNameInPost = trim($_POST["userName"]);
   $fullNameInPost = trim($_POST["nombre"]);
   $emailInPost = trim($_POST["email"]);
@@ -80,8 +81,8 @@ if (!$erroresTotales) {
           <select class="inputLogin" name="pais">
           <option value="">Elegí un país</option>
           <?php foreach ($arrayPaises as $unPais) : ?>
-          <option value="<?= $unPais ?>"<?= isset($countryInPost) && $countryInPost == $unPais ? 'selected' : '';  ?>>
-          <?php= $unPais['name']?></option>
+          <option value="<?= $unPais["name"] ?>"<?= isset($paisInPost) && $paisInPost == $unPais["name"] ? 'selected' : '';  ?>>
+          <?= $unPais['name']?></option>
           <?php endforeach ; ?>
           </select>
           <?php if ( isset($erroresTotales["inCountry"]) ) : ?>
