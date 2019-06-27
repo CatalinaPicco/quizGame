@@ -9,28 +9,14 @@ if ($_POST) {
   $userNameInPost = trim($_POST["userName"]);
   $fullNameInPost = trim($_POST["nombre"]);
   $emailInPost = trim($_POST["email"]);
-
-if ($_FILES) {
-  if ($_FILES["imagen"]["error"] !=0) {
-    echo "Hubo un error al cargar la imagen";
-  } else {
-  $ext = pathinfo($_FILES["imagen"]["name"], PATHINFO_EXTENSION);
-  if ($ext != "jpg" && $ext != "jpeg" && $ext != "png") {
-    echo "La imagen debe ser jpg, jpeg o png <br>";
-  }  else {
-    move_uploaded_file($_FILES["imagen"]["tmp_name"],"archivos/imagen." . $ext);
-  }
-  }
-}
-
-$hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
-
-
-
+  $paisInPost = $_POST["pais"];
 
   $erroresTotales = validacion();
 
 if (!$erroresTotales) {
+  $img = guardarImagen($_FILES["avatar"]);
+  $_POST["posicionAvatar"] = $img;
+  guardarUsuario();
   header("location: perfil.php");
   exit;
 }
@@ -61,23 +47,23 @@ if (!$erroresTotales) {
         placeholder="Nombre de usuario">
       </p>
           <?php if (isset($erroresTotales["inUserName"])) : ?>
-        <div class="alert alert-danger">
+          <div class="alert alert-danger">
           <?= $erroresTotales["inUserName"]; ?>
-        </div>
+          </div>
           <?php endif; ?>
-        <p>
       <p>
-      <label for="nombre">
-      </label>
-      <input class="inputLogin" id="nombre" type="text" name="nombre"
-      value="<?= isset($fullNameInPost) ? $fullNameInPost : ''; ?>"
-      placeholder="Nombre">
+      <p>
+        <label for="nombre">
+        </label>
+        <input class="inputLogin" id="nombre" type="text" name="nombre"
+        value="<?= isset($fullNameInPost) ? $fullNameInPost : ''; ?>"
+        placeholder="Nombre">
       </p>
-      <?php if (isset($erroresTotales["inFullName"])) : ?>
+        <?php if (isset($erroresTotales["inFullName"])) : ?>
         <div class="alert alert-danger">
-          <?= $erroresTotales["inFullName"]; ?>
+        <?= $erroresTotales["inFullName"]; ?>
         </div>
-      <?php endif; ?>
+        <?php endif; ?>
       <p>
         <label for="email">
         </label>
@@ -85,54 +71,66 @@ if (!$erroresTotales) {
         value="<?= isset($emailInPost) ? $emailInPost : ''; ?>"
         placeholder="Correo electrónico">
       </p>
-      <?php if ( isset($erroresTotales["inEmail"]) ) : ?>
-        <div class="alert alert-danger">
+          <?php if ( isset($erroresTotales["inEmail"]) ) : ?>
+          <div class="alert alert-danger">
           <?= $erroresTotales["inEmail"]; ?>
-        </div>
-      <?php endif; ?>
+          </div>
+          <?php endif; ?>
         <p>
-          <select class = "inputLogin">
-              <?php foreach ($arrayPaises as $unPais) : ?>
-                <option value=""> <?php echo $unPais['name']?> </option>
-              <?php endforeach ; ?>
+          <select class="inputLogin" name="pais">
+          <option value="">Elegí un país</option>
+          <?php foreach ($arrayPaises as $unPais) : ?>
+          <option value="<?= $unPais ?>"<?= isset($countryInPost) && $countryInPost == $unPais ? 'selected' : '';  ?>>
+          <?php= $unPais['name']?></option>
+          <?php endforeach ; ?>
           </select>
+          <?php if ( isset($erroresTotales["inCountry"]) ) : ?>
+          <div class="alert alert-danger">
+          <?= $erroresTotales["inCountry"]; ?>
+          </div>
+          <?php endif; ?>
         </p>
         <p>
-        <label for="password">
-        </label>
-        <input class="inputLogin" id="password" type="password" name="password" value="" placeholder="Contraseña">
+          <div class="col-md-6">
+							<div class="form-group">
+								<label><b>Imagen de perfil:</b></label>
+								<div class="custom-file">
+									<input type="file" name="avatar" class="custom-file-input">
+									<label class="custom-file-label">elige una foto...</label>
+								</div>
+							</div>
+							<?php if ( isset($erroresTotales["inAvatar"]) ) : ?>
+								<div class="alert alert-danger">
+									<?= $erroresTotales["inAvatar"]; ?>
+								</div>
+							<?php endif; ?>
+						</div>
+        </p>
+        <p>
+          <label for="password">
+          </label>
+          <input class="inputLogin" id="password" type="password" name="password" value="" placeholder="Contraseña">
       </p>
-      <?php if ( isset($erroresTotales["inPassword"]) ) : ?>
-        <div class="alert alert-danger">
+          <?php if ( isset($erroresTotales["inPassword"]) ) : ?>
+          <div class="alert alert-danger">
           <?= $erroresTotales["inPassword"]; ?>
-        </div>
-      <?php endif; ?>
+          </div>
+          <?php endif; ?>
       <p>
         <label for="repassword">
         </label>
         <input class="inputLogin" id="repassword" type="password" name="repassword" value="" placeholder="Repetir contraseña">
       </p>
-      <?php if ( isset($errorsInRegister["inRepassword"]) ) : ?>
+        <?php if ( isset($errorsInRegister["inRepassword"]) ) : ?>
         <div class="alert alert-danger">
-          <?= $errorsInRegister["inRepassword"]; ?>
+        <?= $errorsInRegister["inRepassword"]; ?>
         </div>
-      <?php endif; ?>
+        <?php endif; ?>
       <p>
         <button class="btn btn-success" type="submit" name="button">Registrarse</button>
       </p>
     </form>
     </div>
-    <p>
-      <form class="" action="index.html" method="post" enctype="multipart/form-data">
-        <div class="">
-          <label for="">Imagen</label>
-          <input type="file" name="imagen" value="">
-        </div>
-          <div class="">
-            <input type="submit" name="" value="enviar">
-          </div>
-      </form>
-    </p>
 
 
 
