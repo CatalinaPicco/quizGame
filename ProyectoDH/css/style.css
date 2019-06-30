@@ -16,6 +16,13 @@ body {
   background-repeat: repeat;
 }
 
+.fontLatoLabel {
+  font-family: 'Lato', sans-serif !important;
+  color: #707070;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
 ul, ol {
   padding: 0;
   margin: 0;
@@ -194,9 +201,9 @@ ul .nav-profile {
 }
 
 .card-img-top{
-    width: 80%;
-    margin:auto;
-margin-top: 5%;
+  width: 80%;
+  margin:auto;
+  margin-top: 5%;
 }
 
 .carrousel-tablet-desktop{
@@ -208,11 +215,11 @@ margin-top: 5%;
   height: 10px;
   border-radius: 100%;
   margin:0 5px;
-  }
+}
 
-  /*FINAL about*/
+/*FINAL about*/
 
-  /*INICIO footer*/
+/*INICIO footer*/
 
 footer{
   position:relative;
@@ -284,6 +291,13 @@ footer{
   align-items: center;
 }
 
+.form-control {
+  border-radius: 1.25rem;
+}
+
+.custom-file-label::after {
+  content: "buscar";
+}
 
 /*Login*/
 
@@ -322,8 +336,8 @@ footer{
 }
 
 .h2-register{
-text-align: center;
-font-family: sans-serif;
+  text-align: center;
+  font-family: sans-serif;
 }
 
 .formulario-register{
@@ -346,26 +360,26 @@ font-family: sans-serif;
 }
 
 .tituloPerfil{
-margin-top: 10%;
+  margin-top: 10%;
 }
 
 .foto-perfil{
-margin: 5% 0;
+  margin: 5% 0;
 }
 
 .nombre-perfil {
-font-size: 1.2em;
-font-weight: bold;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .email-perfil{
-font-size: 1em;
+  font-size: 1em;
 }
 .puntaje-perfil{
   margin-top: 10%;
 }
 .estrellas-perfil {
-margin-top: 5%;
+  margin-top: 5%;
 
 }
 /*final perfil*/
@@ -513,12 +527,12 @@ h5.bootstrap {
     margin: 50px auto;
   }
 
-/* Final Ranking desktop */
+  /* Final Ranking desktop */
 
-body{
-  background-image: url(../img/fondo.png);
-  background-repeat: repeat;
-}
+  body{
+    background-image: url(../img/fondo.png);
+    background-repeat: repeat;
+  }
 
   /*INICIO header*/
   .main-nav .nav-profile{
@@ -578,13 +592,13 @@ body{
     padding: 7px 20px;
   }
 
-    /*FINAL header*/
+  /*FINAL header*/
 
   /*INICIO index*/
   .container-ppal {
     max-width: 800px;
     margin:0 auto;
-}
+  }
 
   .container-section{
     justify-content:center;
@@ -601,27 +615,27 @@ body{
 
   .button-play{
     margin-top: 1%;
-    }
+  }
 
-    /*FINAL index*/
+  /*FINAL index*/
 
- /*imagen de fondo*/
+  /*imagen de fondo*/
 
   .image-t-desktop{
     display: flex;
     margin: 0 auto;
     width: 100%;
     align-items: center;
-    }
+  }
 
   .image-t-desktop img{
     width: 90vw;
     margin: 0 auto;
-    }
+  }
 
   .image-mobile{
     display:none;
-    }
+  }
 
 
 
@@ -650,24 +664,24 @@ body{
 
   /*FINAL about*/
 
-/* FAQ's*/
+  /* FAQ's*/
 
-.containerPreguntas{
-  margin-top: 7%;
-}
+  .containerPreguntas{
+    margin-top: 7%;
+  }
 
-.buscador{
-  width: 70vw;
-  margin:10px;
-  margin-right: 0px;
-}
+  .buscador{
+    width: 70vw;
+    margin:10px;
+    margin-right: 0px;
+  }
 
-.buscadorEnviar{
-  margin-top:10px;
-  width: 16vw;
-}
+  .buscadorEnviar{
+    margin-top:10px;
+    width: 16vw;
+  }
 
-/* Final FAQ's*/
+  /* Final FAQ's*/
 
 }
 
@@ -676,7 +690,7 @@ body{
   .container-ppal {
     max-width: 1200px;
     margin:0 auto;
-}
+  }
 
   .container-section{
     justify-content:center;
@@ -686,50 +700,50 @@ body{
   .carrousel-tablet-desktop{
     display: flex;
     width: 50vw;
-    }
+  }
 
   .image-t-desktop img{
-      width: 50vw;
-    }
+    width: 50vw;
+  }
 
-    /* INICIO perfil*/
+  /* INICIO perfil*/
 
-    .sectionPerfil{
+  .sectionPerfil{
     margin-left: 0;
-    }
+  }
 
-    .tituloPerfil{
+  .tituloPerfil{
     margin-top: 5%;
-    }
+  }
 
-    .foto-perfil{
+  .foto-perfil{
     margin: 3% 0;
-    }
+  }
 
-    .nombre-perfil {
+  .nombre-perfil {
     font-size: 1.2em;
     font-weight: bold;
-    }
+  }
 
-    .email-perfil{
+  .email-perfil{
     font-size: 1em;
-    }
-    .puntaje-perfil{
-      margin-top: 3%;
-    }
-    .estrellas-perfil {
+  }
+  .puntaje-perfil{
     margin-top: 3%;
-    }
+  }
+  .estrellas-perfil {
+    margin-top: 3%;
+  }
 
-    /*FINAL Perfil*/
+  /*FINAL Perfil*/
 
-    /* FAQ's*/
+  /* FAQ's*/
 
-    .containerPreguntas{
-      margin-top: 5.75%;
-    }
+  .containerPreguntas{
+    margin-top: 5.75%;
+  }
   /*FINAL FAQ's*/
 
 
 
-  }
+}
