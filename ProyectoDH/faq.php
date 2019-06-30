@@ -40,7 +40,7 @@ $titulo = "FAQ";
   				<div class="card">
   					<div class="card-header">
   						<h2 class="mb-0">
-  							<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+  							<button class="btn btn-link fontLatoFaq" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
   								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   							</button>
   						</h2>
@@ -56,7 +56,7 @@ $titulo = "FAQ";
   				<div class="card">
   					<div class="card-header">
   						<h2 class="mb-0">
-  							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+  							<button class="btn btn-link collapsed fontLatoFaq" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
   								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   							</button>
   						</h2>
@@ -70,7 +70,7 @@ $titulo = "FAQ";
   				<div class="card">
   					<div class="card-header">
   						<h2 class="mb-0">
-  							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+  							<button class="btn btn-link collapsed fontLatoFaq" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
   								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   							</button>
   						</h2>
@@ -84,7 +84,7 @@ $titulo = "FAQ";
           <div class="card">
   					<div class="card-header">
   						<h2 class="mb-0">
-  							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+  							<button class="btn btn-link collapsed fontLatoFaq" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
   								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   							</button>
   						</h2>
@@ -98,7 +98,7 @@ $titulo = "FAQ";
           <div class="card">
   					<div class="card-header">
   						<h2 class="mb-0">
-  							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+  							<button class="btn btn-link collapsed fontLatoFaq" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
   								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   							</button>
   						</h2>
@@ -112,7 +112,7 @@ $titulo = "FAQ";
           <div class="card">
   					<div class="card-header">
   						<h2 class="mb-0">
-  							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+  							<button class="btn btn-link collapsed fontLatoFaq" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
   								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   							</button>
   						</h2>

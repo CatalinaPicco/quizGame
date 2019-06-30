@@ -23,6 +23,23 @@ body {
   font-size: 0.9em;
 }
 
+.fontLatoFaq {
+  font-family: 'Lato', sans-serif !important;
+  color: #707070;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.fontLatoFaq:hover {
+  color: #6A6FF7;
+  text-decoration: none;
+}
+
+.fontLatoFaq:focus {
+  color: #6A6FF7;
+  text-decoration: none;
+}
+
 ul, ol {
   padding: 0;
   margin: 0;
