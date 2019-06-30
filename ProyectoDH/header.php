@@ -10,7 +10,7 @@
           <div class="dropdown-menu dropdown-menu-right">
             <button class="dropdown-item" type="button">
                 <?php foreach ($navAccess as $linkAcc => $links) : ?>
-                  <li><a href="<?php echo $links; ?>"> <?php echo $linkAcc; ?> </a></li>
+                  <li class="navLink"><a href="<?php echo $links; ?>"> <?php echo $linkAcc; ?> </a></li>
                 <?php endforeach; ?></button>
           </div>
         </div>
@@ -25,7 +25,7 @@
         </ul>
         <ul class="nav-access">
           <?php foreach ($navAccess as $linkAcc => $links) : ?>
-            <li><a href="<?php echo $links; ?>"> <?php echo $linkAcc; ?> </a></li>
+            <li class="navLink"><a href="<?php echo $links; ?>"> <?php echo $linkAcc; ?> </a></li>
           <?php endforeach; ?>
         </ul>
       </nav>

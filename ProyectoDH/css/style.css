@@ -124,6 +124,24 @@ ul .nav-profile {
   color:#FFFFFF;
 }
 
+@media (min-width: 768px){
+  .navLink a {
+    text-decoration: none;
+  }
+
+  .navLink:hover {
+    background: #ccc;
+  }
+
+  .nav-profile:hover {
+    background: #ccc;
+  }
+
+  .nav-profile a {
+    text-decoration: none;
+  }
+}
+
 /* FINAL header*/
 
 /* INICIO index*/
