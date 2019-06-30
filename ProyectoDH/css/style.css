@@ -324,6 +324,12 @@ footer{
   background-color: #6A6FF7;
 }
 
+@media (min-width: 768px){
+  .containerLoginV2 {
+    height: 80vh;
+  }
+}
+
 /*final Login*/
 
 .tituloJuego{
