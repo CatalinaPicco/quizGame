@@ -88,8 +88,16 @@ if ($_POST) {
           </div>
           <div class="form-group fontLatoLabel">
             <label for="avatar">Sube un avatar: </label>
-            <input type="file" name="avatar" class="form-control-file">
+            <div class="custom-file">
+            <input type="file" name="avatar" class="custom-file-input" id="customFileLang" lang="es">
+            <label class="custom-file-label"  for="customFileLang">Seleccionar Archivo</label>
           </div>
+                    </div>
+
+
+
+
+
           <div>
             <?php if ( isset($erroresTotales["inAvatar"]) ) : ?>
               <div class="alert alert-danger">

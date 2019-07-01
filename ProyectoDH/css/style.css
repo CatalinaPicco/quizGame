@@ -224,7 +224,7 @@ ul .nav-profile {
 .h2-about{
   color: white;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.8em;
   margin-top: 3%;
   text-align: center;
 }
@@ -284,7 +284,7 @@ footer{
 
 .containerPreguntas h1{
   color: #F1F1F1;
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: bold;
   margin: auto;
   margin-top: 1%;
@@ -330,8 +330,13 @@ footer{
   border-radius: 1.25rem;
 }
 
+.custom-file-input, .custom-file-label, .custom-file-label{
+    border-radius: 20px;
+}
+
 .custom-file-label::after {
   content: "buscar";
+  border-radius: 0 20px 20px 0;
 }
 
 /*Login*/
