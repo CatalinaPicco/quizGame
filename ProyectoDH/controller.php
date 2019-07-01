@@ -63,6 +63,10 @@ if (empty($password)) {
   $errores["inPassword"] = "La contraseña no puede estar vacía";
 } elseif ( strlen($password) < 5 ) {
   $errores["inPassword"] = "La contraseña debe tener 5 letras o más";
+} elseif (!strpos($password, "DH")) {
+  $errores["inPassword"] = "Tu contraseña debe contener las letras 'DH'";
+} elseif (strpos($password, " ")) {
+  $errores["inPassword"] = "La contraseña no puede tener espacios en blanco";
 }
 
 if (empty($rePassword)) {
