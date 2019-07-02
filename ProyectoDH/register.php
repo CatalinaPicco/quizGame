@@ -14,6 +14,10 @@ if ($_POST) {
 
   $erroresTotales = validacion();
 
+  //echo "<pre>";
+  //var_dump($erroresTotales);
+  //echo "</pre>";
+
   if (!$erroresTotales) {
     $img = guardarImagen($_FILES["avatar"]);
     $_POST["posicionAvatar"] = $img;
@@ -120,9 +124,9 @@ if ($_POST) {
             </label>
             <input class="form-control" id="repassword" type="password" name="repassword" value="" placeholder="Repetir contraseña">
           </div>
-          <?php if ( isset($errorsInRegister["inRepassword"]) ) : ?>
+          <?php if ( isset($erroresTotales["inRepassword"]) ) : ?>
             <div class="alert alert-danger">
-              <?= $errorsInRegister["inRepassword"]; ?>
+              <?= $erroresTotales["inRepassword"]; ?>
             </div>
           <?php endif; ?>
           <button class="btn btn-success" type="submit" name="button">Registrarse</button>

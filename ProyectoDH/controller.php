@@ -6,7 +6,8 @@ function obtenerUsuarios() {
 
 function guardarUsuario(){
 $listaDeUsuarios = obtenerUsuarios();
-unset($_POST["$rePassword"]);
+// unset($_POST["$rePassword"]);
+unset($_POST["repassword"]);
 $_POST["password"] = password_hash($_POST["password"], PASSWORD_DEFAULT);
 $listaDeUsuarios[] = $_POST;
 file_put_contents('data/users.json', json_encode($listaDeUsuarios, JSON_PRETTY_PRINT));
@@ -23,10 +24,10 @@ function emailExiste($email) {
 }
 
 function guardarImagen($file){
-  $nombre = $file["name"];
-  $ext = pathinfo($name, PATHINFO_EXTENSION);
+  $nombre = $_FILES["name"];
+  $ext = pathinfo($nombre, PATHINFO_EXTENSION);
   $ruta = "data/avatars/" . uniqid("img-") . "." . $ext;
-  $tempFile = $file["tmp_name"];
+  $tempFile = $_FILES["tmp_name"];
   move_uploaded_file($tempFile, $ruta);
 	return $ruta;
 	}
@@ -69,9 +70,9 @@ if (empty($password)) {
   $errores["inPassword"] = "La contraseña no puede tener espacios en blanco";
 }
 
-if (empty($rePassword)) {
+if (empty($repassword)) {
   $errores["inRepassword"] = "Debes escribir la contraseña de nuevo";
-  } elseif ( $password != $rePassword ) {
+} elseif ( $password != $repassword ) {
     $errores["inRepassword"] = "Las contraseñas no coinciden";
   }
 
