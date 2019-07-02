@@ -24,10 +24,10 @@ function emailExiste($email) {
 }
 
 function guardarImagen($file){
-  $nombre = $_FILES["name"];
+  $nombre = $file["name"];
   $ext = pathinfo($nombre, PATHINFO_EXTENSION);
-  $ruta = "data/avatars/" . uniqid("img-") . "." . $ext;
-  $tempFile = $_FILES["tmp_name"];
+  $ruta = "data/Avatars/" . uniqid("img-") . "." . $ext;
+  $tempFile = $file["tmp_name"];
   move_uploaded_file($tempFile, $ruta);
 	return $ruta;
 	}
