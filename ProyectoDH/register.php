@@ -35,7 +35,7 @@ if ($_POST) {
 
   <div class="container mt-5 mb-5 pt-5">
     <div class="row">
-      <form class="ingreso col-md-6 offset-md-3" action="" method="post">
+      <form class="ingreso col-md-6 offset-md-3" action="" method="post" enctype="multipart/form-data">
         <div class="form-group fontLatoLabel">
           <label for="userName">Nombre de Usuario:
           </label>

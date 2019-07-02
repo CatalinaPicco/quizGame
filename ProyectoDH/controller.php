@@ -17,10 +17,10 @@ function emailExiste($email) {
   foreach ($todosLosUsuarios as $unUsuario) {
     if ($unUsuario["email"] == $email) {
       return true;
-  }
+    }
   }
       return false;
-    }
+}
 
 function guardarImagen($file){
   $nombre = $file["name"];
@@ -90,4 +90,62 @@ if (empty($pais)) {
 
 return $errores;
 }
+
+function usuarioOEmailExiste($usuarioOEmail) {
+  $todosLosUsuarios = obtenerUsuarios();
+  foreach ($todosLosUsuarios as $unUsuario) {
+    if ($unUsuario["email"] == $usuarioOEmail || $unUsuario["userName"] == $usuarioOEmail) {
+      return true;
+    }
+  }
+      return false;
+}
+
+
+function validacionLogin() {
+  $errores = [];
+  $usuarioOEmail = trim($_POST['userOrEmail']);
+  $password = trim($_POST['pass']);
+
+  if ( empty($usuarioOEmail) ) {
+    $errores['enUsuarioOEmail'] = 'El usuario/email es obligatorio';
+  } elseif ( !usuarioOEmailExiste($usuarioOEmail) ) {
+    $errores['enUsuarioOEmail'] = 'El usuario/email no está registrado';
+  } else {
+    $usuario = getUserByEmail($usuarioOEmail);
+
+    if ( !password_verify($password, $usuario['password']) ) {
+      $errores['enPassword'] = 'La contraseña es incorrecta';
+    }
+  }
+
+  if ( empty($password) ) {
+    $errores['enPassword'] = 'La contraseña no puede estar vacía';
+  }
+
+  return $errores;
+}
+
+function getUserByEmail($usuarioOEmail) {
+  $allUsers = obtenerUsuarios();
+
+  foreach ($allUsers as $oneUser) {
+    if ($oneUser['email'] == $usuarioOEmail || $oneUser['userName'] == $usuarioOEmail) {
+      return $oneUser;
+    }
+  }
+
+  return false;
+}
+
+function login($usuarioALoguear) {
+
+  unset($usuarioALoguear['password']);
+
+  $_SESSION['usuarioLogueado'] = $usuarioALoguear;
+
+  header('location: perfil.php');
+  exit;
+}
+
 ?>
