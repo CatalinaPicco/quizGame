@@ -17,7 +17,7 @@
 
 			// Si eligieron recordar
 			if ( isset($_POST['rememberme']) ) {
-				setcookie('userEmail', $usuarioALoguear['email'], time() + 3000);
+				setcookie('userEmail', $usuarioALoguear['email'], time() + (60 * 60 * 24 * 7 * 30));
 			}
 
 			// Vamos a loguear al usuario
