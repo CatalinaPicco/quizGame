@@ -1,5 +1,6 @@
 <?php
 
+
 function obtenerUsuarios() {
   return json_decode(file_get_contents('data/users.json'), true);
 }
@@ -147,6 +148,10 @@ function login($usuarioALoguear) {
 
   header('location: perfil.php');
   exit;
+}
+
+function estaLogueado() {
+  return isset($_SESSION['usuarioLogueado']);
 }
 
 ?>
