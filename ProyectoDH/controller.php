@@ -84,7 +84,7 @@ if (empty($password)) {
   $errores["inPassword"] = "La contraseña debe tener 5 letras o más";
 } elseif (preg_match("DH", $password)) {
   $errores["inPassword"] = "Tu contraseña debe contener las letras 'DH'";
-} elseif (preg_match(" ", $password)) {
+} elseif (!preg_match(" ", $password)) {
   $errores["inPassword"] = "La contraseña no puede tener espacios en blanco";
 }
 
