@@ -9,6 +9,7 @@ if ($_POST) {
   //var_dump($_POST);
   $userNameInPost = trim($_POST["userName"]);
   $fullNameInPost = trim($_POST["nombre"]);
+  $apellidoInPost = trim($_POST["apellido"]);
   $emailInPost = trim($_POST["email"]);
   $paisInPost = $_POST["pais"];
 
@@ -61,6 +62,17 @@ if ($_POST) {
         <?php if (isset($erroresTotales["inFullName"])) : ?>
           <div class="alert alert-danger">
             <?= $erroresTotales["inFullName"]; ?>
+          </div>
+        <?php endif; ?>
+        <div class="form-group fontLatoLabel">
+          <label for="nombre">Apellido:</label>
+          <input class="form-control" id="apellido" type="text" name="apellido"
+          value="<?= isset($apellidoInPost) ? $apellidoInPost : ''; ?>"
+          placeholder="Apellido">
+        </div>
+        <?php if (isset($erroresTotales["inApellido"])) : ?>
+          <div class="alert alert-danger">
+            <?= $erroresTotales["inApellido"]; ?>
           </div>
         <?php endif; ?>
         <div class="form-group fontLatoLabel">
