@@ -1,4 +1,5 @@
 <?php
+
 $navLinks = [
   "Perfil"=> "perfil.php",
   "Cerrar Sesión" => "logout.php"];

@@ -151,7 +151,7 @@ function login($usuarioALoguear) {
 }
 
 function estaLogueado() {
-  return isset($_SESSION['usuarioLogueado']);
+  return isset($_SESSION['usuarioLogueado'] );
 }
 
 ?>

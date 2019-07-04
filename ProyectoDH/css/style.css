@@ -71,14 +71,14 @@ header {
 
 .main-nav .nav-profile-ico{
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top:10px;
+  left: 2px;
 }
 
 .main-nav .toggle-nav{
   position: absolute;
-  top: 20px;
-  right: 15px;
+  top: 10px;
+  right: 20px;
   z-index: 999;
 }
 
@@ -141,6 +141,7 @@ ul .nav-profile {
     text-decoration: none;
   }
 }
+
 
 /* FINAL header*/
 
@@ -789,7 +790,6 @@ h5.bootstrap {
     margin-top: 5.75%;
   }
   /*FINAL FAQ's*/
-
 
 
 }
