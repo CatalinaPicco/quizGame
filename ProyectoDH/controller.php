@@ -1,5 +1,10 @@
 <?php
+session_start();
 
+if ( isset($_COOKIE['userEmail']) ) {
+  $usuarioALoguear = getUserByEmail($_COOKIE['userEmail']);
+  $_SESSION['usuarioLogueado'] = $usuarioALoguear;
+}
 
 function obtenerUsuarios() {
   return json_decode(file_get_contents('data/users.json'), true);
@@ -84,9 +89,9 @@ if (empty($password)) {
   $errores["inPassword"] = "La contraseña debe tener 5 letras o más";
 } elseif (preg_match("DH", $password)) {
   $errores["inPassword"] = "Tu contraseña debe contener las letras 'DH'";
-} elseif (!preg_match(" ", $password)) {
+} /*elseif (!preg_match(" ", $password)) {
   $errores["inPassword"] = "La contraseña no puede tener espacios en blanco";
-}
+}*/
 
 if (empty($repassword)) {
   $errores["inRepassword"] = "Debes escribir la contraseña de nuevo";

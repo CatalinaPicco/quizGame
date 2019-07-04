@@ -1,7 +1,7 @@
 <?php
   require_once 'controller.php';
+  require_once ("head.php");
   $titulo = "Login";
-
   if ($_POST) {
 
 		// Persitimos el email
@@ -29,7 +29,7 @@
 
 <!doctype html>
 <html lang="es">
-<?php require_once ("head.php"); ?>
+
 
 <body>
   <div class="container-login">

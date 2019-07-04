@@ -1,5 +1,3 @@
-<?php
-session_start();?>
 <!-- Required meta tags -->
 <head>
   <meta charset="utf-8">
