@@ -11,13 +11,12 @@ function obtenerUsuarios() {
 }
 
 function guardarUsuario(){
-$listaDeUsuarios = obtenerUsuarios();
-// unset($_POST["$rePassword"]);
-unset($_POST["repassword"]);
-$_POST["password"] = password_hash($_POST["password"], PASSWORD_DEFAULT);
-$listaDeUsuarios[] = $_POST;
-file_put_contents('data/users.json', json_encode($listaDeUsuarios, JSON_PRETTY_PRINT));
-	}
+  $listaDeUsuarios = obtenerUsuarios();
+  unset($_POST["repassword"]);
+  $_POST["password"] = password_hash($_POST["password"], PASSWORD_DEFAULT);
+  $listaDeUsuarios[] = $_POST;
+  file_put_contents('data/users.json', json_encode($listaDeUsuarios, JSON_PRETTY_PRINT));
+}
 
 function emailExiste($email) {
   $todosLosUsuarios = obtenerUsuarios();
@@ -87,11 +86,11 @@ if (empty($password)) {
   $errores["inPassword"] = "La contraseña no puede estar vacía";
 } elseif ( strlen($password) < 5 ) {
   $errores["inPassword"] = "La contraseña debe tener 5 letras o más";
-} elseif (preg_match("DH", $password)) {
+} elseif ( !preg_match("/DH/", $password) ) {
   $errores["inPassword"] = "Tu contraseña debe contener las letras 'DH'";
-} /*elseif (!preg_match(" ", $password)) {
+} elseif ( preg_match("/ /", $password)) {
   $errores["inPassword"] = "La contraseña no puede tener espacios en blanco";
-}*/
+}
 
 if (empty($repassword)) {
   $errores["inRepassword"] = "Debes escribir la contraseña de nuevo";

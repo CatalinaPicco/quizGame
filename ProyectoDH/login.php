@@ -2,6 +2,12 @@
   require_once 'controller.php';
   require_once ("head.php");
   $titulo = "Login";
+
+  if (estaLogueado()) {
+    header('location: perfil.php');
+    exit;
+  }
+  
   if ($_POST) {
 
 		// Persitimos el email

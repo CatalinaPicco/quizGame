@@ -2,6 +2,11 @@
 $titulo = "Registro";
 require_once ("controller.php");
 
+if (estaLogueado()) {
+  header('location: perfil.php');
+  exit;
+}
+
 $paises = file_get_contents('https://restcountries.eu/rest/v2/all');
 $arrayPaises = json_decode($paises, true);
 
@@ -19,12 +24,14 @@ if ($_POST) {
   //var_dump($erroresTotales);
   //echo "</pre>";
 
+
   if (!$erroresTotales) {
     $img = guardarImagen($_FILES["avatar"]);
     $_POST["posicionAvatar"] = $img;
     guardarUsuario();
-    header("location: perfil.php");
-    exit;
+    $usuarioALoguear = getUserByEmail($_POST['email']);
+    login($usuarioALoguear);
+
   }
 }
 
