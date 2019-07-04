@@ -41,8 +41,6 @@ require_once ("controller.php");
 
   </div>
 </div></div>
-
-
 <div class="toggle-nav">
    <div class="btn-group">
 
@@ -55,18 +53,13 @@ require_once ("controller.php");
              <li class="navLink"><a href="<?php echo $linkLs; ?>"> <?php echo $linkL; ?> </a></li>
            <?php endforeach; ?>
            </button>
-
      </div>
    </div>
 </div>
 
-  <?php endif; ?>
 
 
 
-
-
-<?php if (estalogueado()): ?>
         <ul class="nav-profile">
           <?php foreach ($navLinks as $linkTxt => $linkUrl) : ?>
             <li><i class="material-icons">account_circle</i><a href="<?php echo $linkUrl ?>">   <?php echo $linkTxt; ?> </a></li>
@@ -77,6 +70,7 @@ require_once ("controller.php");
             <li class="navLink"><a href="<?php echo $linkLs; ?>"> <?php echo $linkLog; ?> </a></li>
           <?php endforeach; ?> </ul>
 <?php endif; ?>
+
 <?php if (!estalogueado()): ?>
   <ul class="nav-access">
   <?php foreach ($navAccess as $linkAcc => $links) : ?>
