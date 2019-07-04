@@ -24,6 +24,16 @@ function emailExiste($email) {
       return false;
 }
 
+function userNameExiste($userName) {
+  $todosLosUsuarios = obtenerUsuarios();
+   foreach ($todosLosUsuarios as $unUsuario) {
+     if ($unUsuario["userName"] == $userName) {
+       return true;
+     }
+   }  return false;
+}
+
+
 function guardarImagen($file){
   $nombre = $file["name"];
   $ext = pathinfo($nombre, PATHINFO_EXTENSION);
@@ -37,20 +47,27 @@ function guardarImagen($file){
 function validacion(){
  $errores = [];
 
- $userName = trim($_POST['userName']);
- $fullName = trim($_POST['nombre']);
- $email = trim($_POST['email']);
- $password = trim($_POST['password']);
- $repassword = trim($_POST['repassword']);
- $pais = $_POST['pais'];
- $avatar = $_FILES['avatar'];
+ $userName = trim($_POST["userName"]);
+ $fullName = trim($_POST["nombre"]);
+ $apellido = trim($_POST["apellido"]);
+ $email = trim($_POST["email"]);
+ $password = trim($_POST["password"]);
+ $repassword = trim($_POST["repassword"]);
+ $pais = $_POST["pais"];
+ $avatar = $_FILES["avatar"];
 
   if (empty($userName)) {
   $errores["inUserName"] = "Tienes que elegir un nombre de usuario";
-  }
+} elseif (userNameExiste($userName)) {
+  $errores["inUserName"] = "Ese nombre de usuario ya está registrado";
+}
 
 if (empty($fullName)) {
-  $errores["inFullName"] = "Tienes que escribir tu nombre completo";
+  $errores["inFullName"] = "Tienes que escribir tu nombre";
+}
+
+if (empty($apellido)) {
+  $errores["inApellido"] = "Tienes que escribir tu apellido";
 }
 
 if (empty($email)) {
@@ -65,9 +82,9 @@ if (empty($password)) {
   $errores["inPassword"] = "La contraseña no puede estar vacía";
 } elseif ( strlen($password) < 5 ) {
   $errores["inPassword"] = "La contraseña debe tener 5 letras o más";
-} elseif (!strpos($password, "DH")) {
+} elseif (preg_match("DH", $password)) {
   $errores["inPassword"] = "Tu contraseña debe contener las letras 'DH'";
-} elseif (strpos($password, " ")) {
+} elseif (!preg_match(" ", $password)) {
   $errores["inPassword"] = "La contraseña no puede tener espacios en blanco";
 }
 
