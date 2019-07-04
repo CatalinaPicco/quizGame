@@ -1,5 +1,14 @@
 <?php
 $titulo = "Perfil";
+require_once ("controller.php");
+if (!estaLogueado()) {
+  header('location: index.php');
+  exit;
+}
+if ( estaLogueado() ) {
+  $user = $_SESSION['usuarioLogueado'];
+}
+
 ?>
 
 <!doctype html>
@@ -13,18 +22,18 @@ $titulo = "Perfil";
 
       <section class="sectionPerfil">
 
-<h1 class="h1-index"><strong>Usuario</strong></h1>
+<h1 class="h1-index"><strong><?= $user["userName"]; ?></strong></h1>
 
         <div class="foto-perfil">
-          <img src="img/user_1.png" alt="Foto del usuario">
+          <img src=<?= $user["posicionAvatar"]; ?>  alt="Foto del usuario">
         </div>
 
         <div class="nombre-perfil">
-        "Nombre de usuario"
+        <?= $user["nombre"]; ?>
         </div>
 
         <div class="email-perfil">
-        "Direccion de email"
+        <?= $user["email"]; ?>
         </div>
 
           <div class="puntaje-perfil">
@@ -32,7 +41,7 @@ $titulo = "Perfil";
           </div>
 
           <div class="estrellas-perfil">
-          <i class="material-icons estrellita active">star</i>
+          <i class="material-icons estrellita active" >star</i>
           </div>
 
     </section>

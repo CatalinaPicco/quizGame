@@ -98,7 +98,7 @@ header {
   display: none;
 }
 
-ul .nav-profile {
+.nav-profile li{
   display: none;
 }
 
@@ -123,25 +123,6 @@ ul .nav-profile {
 .dropdown-item li a {
   color:#FFFFFF;
 }
-
-@media (min-width: 768px){
-  .navLink a {
-    text-decoration: none;
-  }
-
-  .navLink:hover {
-    background: #ccc;
-  }
-
-  .nav-profile:hover {
-    background: #ccc;
-  }
-
-  .nav-profile a {
-    text-decoration: none;
-  }
-}
-
 
 /* FINAL header*/
 
@@ -313,6 +294,13 @@ footer{
 }
 /*final FAQ's*/
 
+/*INICIO Perfil*/
+.foto-perfil img{
+  width:150px;
+}
+
+/*FINAL Perfil*/
+
 /*Principio Register*/
 .container-register{
   background-image: url("../img/home/background-mobile.png");
@@ -369,9 +357,32 @@ footer{
   .containerLoginV2 {
     height: 80vh;
   }
+/*final Login*/
+
+
+/*INICIO Header*/
+.navLink a {
+  text-decoration: none;
 }
 
-/*final Login*/
+.navLink:hover {
+  background: #ccc;
+}
+.nav-profile {
+    color:#FFFFFF;
+    background-color: #6A6FF7;
+
+}
+
+.dropdown-menu  :hover {
+    background-color: #6A6FF7;
+}
+
+.nav-profile a {
+  text-decoration: none;
+}
+/*FINAL Header*/
+
 
 .tituloJuego{
   margin: auto;
@@ -407,11 +418,11 @@ footer{
 }
 
 .tituloPerfil{
-  margin-top: 10%;
+  margin-top: 2%;
 }
 
 .foto-perfil{
-  margin: 5% 0;
+  margin: 2% 0;
 }
 
 .nombre-perfil {
@@ -423,10 +434,10 @@ footer{
   font-size: 1em;
 }
 .puntaje-perfil{
-  margin-top: 10%;
+  margin-top: 2%;
 }
 .estrellas-perfil {
-  margin-top: 5%;
+  margin-top: 2%;
 
 }
 /*final perfil*/
@@ -594,13 +605,6 @@ h5.bootstrap {
     right: 15px;
   }
 
-  .nav-profile{
-    display: inline-flex;
-    width:120px;
-    background-color: #E2E2E2;
-    border-radius: 20px;
-  }
-
   .nav-profile a{
     color: black;
     font-weight: bold;
@@ -651,7 +655,6 @@ h5.bootstrap {
     justify-content:center;
   }
 
-
   .h1-index{
     margin:0 0 1% 0;
   }
@@ -684,8 +687,6 @@ h5.bootstrap {
     display:none;
   }
 
-
-
   /*INICIO about*/
 
   .container-about {
@@ -708,7 +709,6 @@ h5.bootstrap {
     align-items: center;
   }
 
-
   /*FINAL about*/
 
   /* FAQ's*/
@@ -727,13 +727,10 @@ h5.bootstrap {
     margin-top:10px;
     width: 16vw;
   }
-
   /* Final FAQ's*/
-
 }
 
 @media (min-width:1025px) {
-
   .container-ppal {
     max-width: 1200px;
     margin:0 auto;
@@ -760,11 +757,11 @@ h5.bootstrap {
   }
 
   .tituloPerfil{
-    margin-top: 5%;
+    margin-top: 10px;
   }
 
   .foto-perfil{
-    margin: 3% 0;
+    margin: 1% 0;
   }
 
   .nombre-perfil {
@@ -775,11 +772,13 @@ h5.bootstrap {
   .email-perfil{
     font-size: 1em;
   }
+
   .puntaje-perfil{
-    margin-top: 3%;
+    margin-top:1%;
   }
+
   .estrellas-perfil {
-    margin-top: 3%;
+    margin-top:1%;
   }
 
   /*FINAL Perfil*/
